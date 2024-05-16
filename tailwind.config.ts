@@ -10,12 +10,15 @@ const config: Config = {
 		colors: {
       transparent: 'transparent',
       current: 'currentColor',
-			'dark': '#0a192f',
-			'light': '#ffe5cc',
-      'highlight': '#fab005',
+			'dark': 'rgb(var(--color-dark) / <alpha-value>)',
+			'light': 'rgb(var(--color-light) / <alpha-value>)',
+      'highlight': 'rgb(var(--color-highlight) / <alpha-value>)',
       
     },
     extend: {
+			animation: {
+        'spin-quick': 'spin 0.5s linear infinite',
+			},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

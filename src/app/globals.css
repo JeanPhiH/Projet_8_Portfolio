@@ -18,7 +18,7 @@
 
 body {
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1240px;
   color: rgb(var(--color-light));
 	background-color: rgb(var(--color-dark));
   /* background: linear-gradient(
