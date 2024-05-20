@@ -29,6 +29,12 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+h1, h2 {
+	font-family: "Ubuntu Mono";
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
