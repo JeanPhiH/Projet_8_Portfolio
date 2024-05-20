@@ -1,4 +1,12 @@
 @tailwind base;
+
+@layer base {
+  h1, h2 {
+    @apply text-xl font-bold font-ubuntumono;
+		/* @apply font-bold; */
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -29,11 +37,11 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-h1, h2 {
+/* h1, h2 {
 	font-family: "Ubuntu Mono";
 	font-weight: bold;
 	font-size: 1.25rem;
-}
+} */
 
 @layer utilities {
   .text-balance {

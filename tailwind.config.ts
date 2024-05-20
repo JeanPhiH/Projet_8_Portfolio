@@ -19,6 +19,10 @@ const config: Config = {
 			animation: {
         'spin-quick': 'spin 0.5s linear infinite',
 			},
+			fontFamily: {
+				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],
+				ubuntumono: ['var(--font-ubuntumono)', 'monospace'],
+			},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
