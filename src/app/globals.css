@@ -68,7 +68,7 @@ body {
 	animation: wiggle 0.5s ease-in-out infinite
 } */
 
-.frametl:active {
+.frametl:hover {
 	transform: rotateX(90deg);
 	transform-origin: top;
 }
@@ -81,7 +81,7 @@ body {
 	transform-origin: bottom;
 	transform-style: preserve-3d;
 }
-.framebl:active {
+.framebl:hover {
 	transform: rotateX(90deg);
 	transform-origin: bottom;
 }
@@ -94,7 +94,7 @@ body {
 	transform-origin: right;
 	transform-style: preserve-3d;
 }
-.framer:active {
+.framer:hover {
 	transform: rotateY(90deg);
 	transform-origin: right;
 }
