@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 export default function About () {
 	return (
@@ -13,8 +13,10 @@ export default function About () {
 				<p>Ma maxime du moment: </p>
 				<blockquote className="italic">C’est dans la contrainte que nait l’inspiration.</blockquote>
 			</article>
-			<div className="mt-10">
-				<div className="frametl"></div>
+			<div className="relative mt-10 w-full h-[375px]">
+				<div className="frametl bg-highlight absolute"></div>
+				<div className="framer bg-highlight absolute top-3 left-0"></div>
+				<div className="framebl bg-highlight absolute bottom-0"></div>
 			</div>
 		</section>
 	)
