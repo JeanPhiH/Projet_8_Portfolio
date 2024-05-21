@@ -2,7 +2,7 @@
 
 @layer base {
   h1, h2 {
-    @apply text-xl font-bold font-ubuntumono;
+    @apply text-xl font-bold font-ubuntumono text-highlight;
 		/* @apply font-bold; */
   }
 }
@@ -47,4 +47,15 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.frametl {
+	clip-path: polygon(0 0, 100% 0, 40% 50%, 0 50%);
+}
+.framebl {
+	clip-path: polygon(0 100%, 100% 100%, 40% 50%, 0 50%);
+}
+.framer {
+clip-path: polygon(100% 0, 40% 50%, 100% 100%);
 }
