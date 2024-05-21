@@ -9,14 +9,21 @@ export default function About () {
 				<p className="text-highlight text-4xl font-bold">Jean-Philippe Herfeld</p>
 				<p>et je suis développeur web junior.</p>
 				<p>J’ai étudié chez OpenClassrooms et j’y ai aimé l’importance accordée à la <span className="text-highlight">pratique</span> et à l’<span className="text-highlight">autonomie</span>.</p>
-				<p>Je suis curieux de tout et aime les challenges que m’offre la vie.</p>
+				<p>Je suis curieux de tout et aime les challenges qu’offre la vie.</p>
 				<p>Ma maxime du moment: </p>
 				<blockquote className="italic">C’est dans la contrainte que nait l’inspiration.</blockquote>
 			</article>
-			<div className="relative mt-10 w-full h-[375px]">
-				<div className="frametl bg-highlight absolute"></div>
-				<div className="framer bg-highlight absolute top-3 left-0"></div>
-				<div className="framebl bg-highlight absolute bottom-0"></div>
+			
+			<div className="mx-auto relative mt-10 w-[400px] h-[375px]">
+				<div className="frametl bg-highlight absolute hover:animate-wiggle">
+					<Image className="object-cover h-full" src="/photos/paysage.webp" alt="Template" width={400} height={225}/>
+				</div>
+				<div className="framer bg-highlight absolute top-3 right-0 hover:animate-wiggle">
+					<Image className="object-cover h-full" src="/photos/moi.webp" alt="Template" width={250} height={350}/>
+				</div>
+				<div className="framebl bg-highlight absolute bottom-0 hover:animate-wiggle">
+					<Image className="object-cover h-full" src="/photos/jdr.webp" alt="Template" width={400} height={225}/>
+				</div>
 			</div>
 		</section>
 	)

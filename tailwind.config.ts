@@ -16,12 +16,19 @@ const config: Config = {
       
     },
     extend: {
+			keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-0.5deg)' },
+          '50%': { transform: 'rotate(0.5deg)' },
+        }
+      },
 			animation: {
         'spin-quick': 'spin 0.5s linear infinite',
+				'wiggle': 'wiggle 0.5s ease-in-out infinite',
 			},
 			fontFamily: {
 				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],
-				ubuntumono: ['var(--font-ubuntumono)', 'monospace'],
+				ubuntumono: ['var(--font-ubuntumono)', 'monospace']
 			},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -51,18 +51,17 @@ body {
 
 
 .frametl {
-	clip-path: polygon(0 0, 100% 0, 35% 52%, 0 52%);
-	background-color: "red";
+	clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
 	width: 400px;
-	height: 350px;
+	height: 182px;
 }
 .framebl {
-	clip-path: polygon(0 100%, 100% 100%, 35% 48%, 0 48%);
+	clip-path: polygon(0 100%, 100% 100%, 35% 0, 0 0);
 	width: 400px;
-	height: 350px;
+	height: 182px;
 }
 .framer {
-	clip-path: polygon(100% 0, 38% 50%, 100% 100%);
-	width: 400px;
+	clip-path: polygon(100% 0, 0% 50%, 100% 100%);
+	width: 250px;
 	height: 350px;
 }
