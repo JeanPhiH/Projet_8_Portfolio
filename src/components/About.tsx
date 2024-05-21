@@ -15,13 +15,13 @@ export default function About () {
 			</article>
 			
 			<div className="mx-auto relative mt-10 w-[400px] h-[375px]">
-				<div className="frametl bg-highlight absolute hover:animate-wiggle">
+				<div className="frametl bg-highlight absolute">
 					<Image className="object-cover h-full" src="/photos/paysage.webp" alt="Template" width={400} height={225}/>
 				</div>
-				<div className="framer bg-highlight absolute top-3 right-0 hover:animate-wiggle">
+				<div className="framer bg-highlight absolute top-3 right-0">
 					<Image className="object-cover h-full" src="/photos/moi.webp" alt="Template" width={250} height={350}/>
 				</div>
-				<div className="framebl bg-highlight absolute bottom-0 hover:animate-wiggle">
+				<div className="framebl bg-highlight absolute bottom-0">
 					<Image className="object-cover h-full" src="/photos/jdr.webp" alt="Template" width={400} height={225}/>
 				</div>
 			</div>

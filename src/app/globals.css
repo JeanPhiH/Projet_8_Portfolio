@@ -49,19 +49,53 @@ body {
   }
 }
 
+/* @keyframes wiggle {
+	0% { transform: rotate(-0.5deg) },
+  50% { transform: rotate(0.5deg) },
+	100% { transform: rotate(-0.5deg) }
+} */
 
 .frametl {
 	clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
 	width: 400px;
 	height: 182px;
+	transition: transform 0.4s;
+	transform-origin: top;
+	transform-style: preserve-3d;
 }
+
+/* .frametl:hover {
+	animation: wiggle 0.5s ease-in-out infinite
+} */
+
+.frametl:active {
+	transform: rotateX(90deg);
+	transform-origin: top;
+}
+
 .framebl {
 	clip-path: polygon(0 100%, 100% 100%, 35% 0, 0 0);
 	width: 400px;
 	height: 182px;
+	transition: transform 0.4s;
+	transform-origin: bottom;
+	transform-style: preserve-3d;
 }
+.framebl:active {
+	transform: rotateX(90deg);
+	transform-origin: bottom;
+}
+
 .framer {
 	clip-path: polygon(100% 0, 0% 50%, 100% 100%);
 	width: 250px;
 	height: 350px;
+	transition: transform 0.4s;
+	transform-origin: right;
+	transform-style: preserve-3d;
 }
+.framer:active {
+	transform: rotateY(90deg);
+	transform-origin: right;
+}
+/* flip animation */
