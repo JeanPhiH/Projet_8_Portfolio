@@ -97,5 +97,6 @@ body {
 .framer:hover {
 	transform: rotateY(90deg);
 	transform-origin: right;
+	
 }
 /* flip animation */
