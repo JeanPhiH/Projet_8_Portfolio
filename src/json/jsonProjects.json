@@ -1,0 +1,41 @@
+[
+	{
+		"title": "Front-end JS d’un site portfolio",
+		"imgSrc": "/photos/jdr.webp",
+		"imgAlt": "Template",
+		"technoIcons": [
+			{
+				"technoAlt": "html",
+				"technoSrc": "/icons/html5.svg"
+			},
+			{
+				"technoAlt": "css",
+				"technoSrc": "/icons/css3.svg"
+			},
+			{
+				"technoAlt": "javascript",
+				"technoSrc": "/icons/javascript.svg"
+			}
+		],
+		"linksIcons": [
+			{
+				"linkAlt": "github",
+				"linkSrc": "/icons/github.svg",
+				"linkHref": "https://github.com/jeanphih/"
+			},
+			{
+				"linkAlt": "external-link",
+				"linkSrc": "/icons/external-link.svg",
+				"linkHref": "https://www.linkedin.com/in/jeanphiherfeld/"
+			}
+		],
+		"mission": "Créer le front-end dynamique d'un site portfolio d'une architecte d'intérét",
+		"constraints": "Utilisation des langages html, CSS et Javascript seuls",
+		"skills": [
+			{ "skill": "Création de modales" },
+			{ "skill": "Communication avec un back-end" },
+			{ "skill": "Requêtes vers une API" },
+			{ "skill": "Respect de la maquette Figma" }
+		]
+	}
+]

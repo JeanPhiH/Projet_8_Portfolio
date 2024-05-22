@@ -1,24 +1,66 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+import jsonProjects from "@/json/jsonProjects.json";
 
 export default function Projects() {
 	return (
 		<section className="px-4 mt-32">
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-10 flex-col lg:flex-row lg:flex-wrap justify-center items-center">
-				<div className="relative group flex mt-5 w-[500px] h-[400px] border border-light">
-					<Image src="/photos/jdr.webp" alt="Template" width={400} height={400} className="absolute object-cover w-full h-full group-hover:scale-[0.30] duration-500 origin-top-left"/>
-					<h3 className='bg-dark w-[150px] absolute bottom-5 text-center group-hover:translate-y-[-200px] duration-500'>Projet1</h3>
-					<div className="w-[150px]"></div>
-					<article className="p-4">
-						<p>Mission</p>
-						<p>technologies</p>
-						<p>liens</p>
-					</article>
-				</div>
-				<div className="relative group flex mt-5 w-[500px] h-[400px] border border-light">Projet2</div>
-				<div className="lg:basis-1/2 h-[400px]">Projet3</div>
-				<div className="lg:basis-1/2 h-[400px]">projet4</div>
+				{jsonProjects.map((project) => (
+					<div
+						key={project.title}
+						className="relative group flex mt-5 w-[500px] h-[400px] border-4 border-double border-light"
+					>
+						<Image
+							src={project.imgSrc}
+							alt={project.imgAlt}
+							width={500}
+							height={400}
+							className="absolute object-cover w-full h-full group-hover:scale-[0.30] duration-500 origin-top-left"
+						/>
+						<h3 className="bg-dark/75 w-[150px] p-3 absolute left-5 bottom-5 text-center group-hover:translate-y-[-150px] group-hover:-translate-x-5 duration-500">
+							{project.title}
+						</h3>
+						<div className="flex justify-center gap-3 bg-dark/75 w-[150px] p-3 absolute left-[325px] bottom-5 text-center group-hover:-translate-x-[325px] duration-500">
+							{project.technoIcons.map((techno) => (
+								<Image
+									key={techno.technoAlt}
+									src={techno.technoSrc}
+									alt={techno.technoAlt}
+									width={24}
+									height={24}
+								/>
+							))}
+						</div>
+						<div className="flex justify-center gap-3 bg-dark/75 w-[100px] p-3 absolute right-0 top-0 text-center">
+							{project.linksIcons.map((link) => (
+								<Link key={link.linkAlt} href={link.linkHref}>
+									<Image
+										src={link.linkSrc}
+										alt={link.linkAlt}
+										width={24}
+										height={24}
+									/>
+								</Link>
+							))}
+						</div>
+						<div className="w-[150px]"></div>
+						<article className="p-4 w-[350px]">
+							<h4>Mission</h4>
+							<p>{project.mission}</p>
+							<h4>Contraintes</h4>
+							<p>{project.constraints}</p>
+							<h4>Compétences acquises</h4>
+							<ul>
+								{project.skills.map((skill) => (
+									<li key={skill.skill}>{skill.skill}</li>
+								))}
+							</ul>
+						</article>
+					</div>
+				))}
 			</div>
 		</section>
-	)
+	);
 }

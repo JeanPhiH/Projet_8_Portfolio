@@ -2,9 +2,14 @@
 
 @layer base {
   h1, h2 {
-    @apply text-xl font-bold font-ubuntumono text-highlight;
-		/* @apply font-bold; */
+    @apply text-2xl font-bold font-ubuntumono text-highlight;
   }
+	h3 {
+		@apply text-lg text-highlight font-bold;
+	}
+	h4 {
+		@apply text-highlight mt-4;
+	}
 }
 
 @tailwind components;

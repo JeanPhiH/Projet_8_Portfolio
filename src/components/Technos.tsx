@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Technos() {
 	return (
 		<section className="mt-32 flex flex-col items-center md:w-2/3 md:mx-auto">
-			<h2 className="text-highlight font-normal md:text-2xl">Portfolio réalisé avec</h2>
+			<h2 className="text-highlight">Portfolio réalisé avec</h2>
 			<div className="my-10 flex flex-row gap-4 md:gap-6">
 				<Image className="relative top-24 right-20 lg:w-14" src="/icons/nextjs-stroke.svg" alt="NextJS" width={50} height={50} />
 				<Image className="relative top-6 right-12 lg:w-14" src="/icons/typescript-icon.svg" alt="TypeScript" width={50} height={50} />
