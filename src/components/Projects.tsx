@@ -12,7 +12,7 @@ export default function Projects() {
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
-						className="relative group flex mt-5 w-[500px] h-[400px] border-4 border-double border-light"
+						className="relative group flex mt-5 wmax-[500px] h-[400px] border-4 border-double border-light"
 					>
 						<Image
 							src={project.imgSrc}
@@ -21,10 +21,10 @@ export default function Projects() {
 							height={400}
 							className="absolute object-cover w-full h-full group-hover:scale-[0.30] duration-500 origin-top-left"
 						/>
-						<h3 className="bg-dark/75 w-[150px] p-3 absolute left-5 bottom-5 text-center group-hover:translate-y-[-150px] group-hover:-translate-x-5 duration-500">
+						<h3 className="bg-dark/75 w-[150px] p-3 absolute left-5 bottom-5 text-center group-hover:left-0 group-hover:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 bg-dark/75 w-[150px] p-3 absolute left-[325px] bottom-5 text-center group-hover:-translate-x-[325px] duration-500">
+						<div className="flex justify-center gap-3 bg-dark/75 w-[150px] p-3 absolute left-[325px] bottom-5 text-center group-hover:left-0 duration-500">
 							{project.technoIcons.map((techno) => (
 								<Image
 									key={techno.technoAlt}
