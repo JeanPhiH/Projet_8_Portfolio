@@ -1,8 +1,8 @@
 [
 	{
 		"title": "Front-end JS d’un site portfolio",
-		"imgSrc": "/photos/jdr.webp",
-		"imgAlt": "Template",
+		"imgSrc": "/photos/presP3.png",
+		"imgAlt": "Projet Javascript",
 		"technoIcons": [
 			{
 				"technoAlt": "html",
@@ -21,21 +21,136 @@
 			{
 				"linkAlt": "github",
 				"linkSrc": "/icons/github.svg",
-				"linkHref": "https://github.com/jeanphih/"
-			},
-			{
-				"linkAlt": "external-link",
-				"linkSrc": "/icons/external-link.svg",
-				"linkHref": "https://www.linkedin.com/in/jeanphiherfeld/"
+				"linkHref": "https://github.com/JeanPhiH/Projet_3"
 			}
 		],
-		"mission": "Créer le front-end dynamique d'un site portfolio d'une architecte d'intérét",
+		"mission": "Créer le front-end dynamique d'un site portfolio d'une architecte d'intérieur",
 		"constraints": "Utilisation des langages html, CSS et Javascript seuls",
 		"skills": [
 			{ "skill": "Création de modales" },
 			{ "skill": "Communication avec un back-end" },
 			{ "skill": "Requêtes vers une API" },
 			{ "skill": "Respect de la maquette Figma" }
+		]
+	},
+
+
+
+
+	{
+		"title": "Debug et optimisation d'un site",
+		"imgSrc": "/photos/presP5.png",
+		"imgAlt": "Projet debug",
+		"technoIcons": [
+			{
+				"technoAlt": "SEO",
+				"technoSrc": "/icons/seo.svg"
+			},
+			{
+				"technoAlt": "Lighhouse",
+				"technoSrc": "/icons/lighthouse.svg"
+			},
+			{
+				"technoAlt": "WAVE",
+				"technoSrc": "/icons/WAVE2.png"
+			}
+		],
+		"linksIcons": [
+			{
+				"linkAlt": "github",
+				"linkSrc": "/icons/github.svg",
+				"linkHref": "https://github.com/JeanPhiH/Projet_5"
+			},
+			{
+				"linkAlt": "external-link",
+				"linkSrc": "/icons/external-link.svg",
+				"linkHref": "https://jeanphih.github.io/Projet_5/"
+			}
+		],
+		"mission": "Débuguer et optimiser un site web pour le rendre plus rapide, plus performant et mieux référencé grâce au SEO",
+		"constraints": "Avoir un score Lighthouse supérieur à 95% pour desktop et mobile",
+		"skills": [
+			{ "skill": "SEO, résultats enrichis et metadonnées" },
+			{ "skill": "Compréhension de l'outil Lighthouse" },
+			{ "skill": "Rendre le site plus inclusif grâce à l'outil WAVE" },
+			{ "skill": "Écrire un rapport d'optimisation" }
+		]
+	},
+
+
+
+
+	{
+		"title": "Front-end React et Sass d'un site",
+		"imgSrc": "/photos/presP6.png",
+		"imgAlt": "Projet React",
+		"technoIcons": [
+			{
+				"technoAlt": "React",
+				"technoSrc": "/icons/react.svg"
+			},
+			{
+				"technoAlt": "Sass",
+				"technoSrc": "/icons/sass.svg"
+			}
+		],
+		"linksIcons": [
+			{
+				"linkAlt": "github",
+				"linkSrc": "/icons/github.svg",
+				"linkHref": "https://github.com/JeanPhiH/Projet_6"
+			},
+			{
+				"linkAlt": "external-link",
+				"linkSrc": "/icons/external-link.svg",
+				"linkHref": "https://projet-6-psi.vercel.app/"
+			}
+		],
+		"mission": "Créer le front-end d'un site de location immobilière",
+		"constraints": "Utiliser React JS et un langage Scss pour le style",
+		"skills": [
+			{ "skill": "Logique des composants React" },
+			{ "skill": "Spécificités du langage Scss" },
+			{ "skill": "Création d'un carousel" },
+			{ "skill": "Création de collapse via des animations CSS" }
+		]
+	},
+
+
+
+
+	{
+		"title": "Back-end Express et MongoDB",
+		"imgSrc": "/photos/presP7.png",
+		"imgAlt": "Projet Back-end",
+		"technoIcons": [
+			{
+				"technoAlt": "Node JS",
+				"technoSrc": "/icons/node-js.svg"
+			},
+			{
+				"technoAlt": "Express JS",
+				"technoSrc": "/icons/express.svg"
+			},
+			{
+				"technoAlt": "MongoDB",
+				"technoSrc": "/icons/mongodb.svg"
+			}
+		],
+		"linksIcons": [
+			{
+				"linkAlt": "github",
+				"linkSrc": "/icons/github.svg",
+				"linkHref": "https://github.com/JeanPhiH/Projet_7"
+			}
+		],
+		"mission": "Créer le back-end d'un site de notation de livres",
+		"constraints": "Utiliser Express JS et une base de données MongoDB",
+		"skills": [
+			{ "skill": "Logique serveur, routes, middleware et controller" },
+			{ "skill": "Opérations CRUD" },
+			{ "skill": "Sécurisation de la base de données" },
+			{ "skill": "Authentification et connexion via token" }
 		]
 	}
 ]

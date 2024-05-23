@@ -7,6 +7,8 @@ export default function Projects() {
 		<section className="px-4 mt-32">
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-10 flex-col lg:flex-row lg:flex-wrap justify-center items-center">
+
+				{/* PROJECTS FROM JSON FILE */}
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
@@ -35,7 +37,7 @@ export default function Projects() {
 						</div>
 						<div className="flex justify-center gap-3 bg-dark/75 w-[100px] p-3 absolute right-0 top-0 text-center">
 							{project.linksIcons.map((link) => (
-								<Link key={link.linkAlt} href={link.linkHref}>
+								<Link key={link.linkAlt} href={link.linkHref} target="_blank">
 									<Image
 										src={link.linkSrc}
 										alt={link.linkAlt}
