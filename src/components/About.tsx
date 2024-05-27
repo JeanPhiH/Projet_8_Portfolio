@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function About () {
 	return (
-		<section className="px-4 mt-32 flex flex-col lg:flex-row-reverse md:justify-between">
+		<section className="hidden px-4 mt-32 md:flex flex-col lg:flex-row-reverse md:justify-between">
 
 			{/* BIO */}
 			<article className="mt-10 w-3/4 mx-auto lg:w-1/2 lg:px-20 lg:self-center">

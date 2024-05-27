@@ -14,7 +14,7 @@ export default function MenuItem({
 		<Link
 			key={title}
 			href={href}
-			className="flex flex-col items-center justify-center md:w-20 md:h-20 relative group p-2"
+			className="flex md:flex-col gap-1 md:gap-0 items-center justify-start md:justify-center md:w-20 md:h-20 relative group p-2"
 		>
 			<div className="rounded-full absolute inset-0 border-highlight md:group-hover:border-t-2 md:group-hover:animate-spin-quick"></div>
 			<Image
@@ -24,7 +24,7 @@ export default function MenuItem({
 				width={24}
 				height={24}
 			/>
-			<span className="hidden md:flex">{title}</span>
+			<span className="">{title}</span>
 		</Link>
 	);
 }

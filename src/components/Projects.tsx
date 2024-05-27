@@ -4,7 +4,7 @@ import jsonProjects from "@/json/jsonProjects.json";
 
 export default function Projects() {
 	return (
-		<section className="px-4 mt-32">
+		<section className="hidden px-4 mt-32">
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-10 flex-col lg:flex-row lg:flex-wrap justify-center items-center">
 
