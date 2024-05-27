@@ -1,9 +1,10 @@
 @tailwind base;
 
 @layer base {
-  h1, h2 {
-    @apply text-2xl font-bold font-ubuntumono text-highlight text-center;
-  }
+	h1,
+	h2 {
+		@apply text-2xl font-bold font-ubuntumono text-highlight text-center;
+	}
 	h3 {
 		@apply text-lg text-highlight font-bold;
 	}
@@ -17,7 +18,7 @@
 
 :root {
 	--color-dark: 10 25 47;
-  --color-light: 255 229 204;
+	--color-light: 255 229 204;
 	--color-highlight: 250 176 5;
 }
 
@@ -32,9 +33,9 @@
 body {
 	margin: 0 auto;
 	max-width: 1240px;
-  color: rgb(var(--color-light));
+	color: rgb(var(--color-light));
 	background-color: rgb(var(--color-dark));
-  /* background: linear-gradient(
+	/* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
@@ -43,60 +44,69 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
-
-/* @keyframes wiggle {
-	0% { transform: rotate(-0.5deg) },
-  50% { transform: rotate(0.5deg) },
-	100% { transform: rotate(-0.5deg) }
-} */
 
 .frametl {
 	clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
-	width: 400px;
+	width: 300px;
 	height: 182px;
 }
-.frametl img {
-	transition: transform 0.4s;
-	transform-origin: top;
-	transform-style: preserve-3d;
-}
-.frametl:hover img {
-	transform: rotateX(90deg);
-	transform-origin: top;
-}
-
 .framebl {
 	clip-path: polygon(0 100%, 100% 100%, 35% 0, 0 0);
-	width: 400px;
+	width: 300px;
 	height: 182px;
+	z-index: 1;
 }
-.framebl img {
-	transition: transform 0.4s;
-	transform-origin: bottom;
-	transform-style: preserve-3d;
-}
-.framebl:hover img {
-	transform: rotateX(90deg);
-	transform-origin: bottom;
-}
-
 .framer {
 	clip-path: polygon(100% 0, 0% 50%, 100% 100%);
-	width: 250px;
+	width: 185px;
 	height: 350px;
-}
-.framer img {
-	transition: transform 0.4s;
-	transform-origin: right;
-	transform-style: preserve-3d;
-}
-.framer:hover img {
-	transform: rotateY(90deg);
-	transform-origin: right;
-	
+	z-index: 1;
 }
 
+@media (min-width: 768px) {
+	.frametl {
+		width: 400px;
+		height: 182px;
+	}
+	.frametl img {
+		transition: transform 0.4s;
+		transform-origin: top;
+		transform-style: preserve-3d;
+	}
+	.frametl:hover img {
+		transform: rotateX(90deg);
+		transform-origin: top;
+	}
+
+	.framebl {
+		width: 400px;
+		height: 182px;
+	}
+	.framebl img {
+		transition: transform 0.4s;
+		transform-origin: bottom;
+		transform-style: preserve-3d;
+	}
+	.framebl:hover img {
+		transform: rotateX(90deg);
+		transform-origin: bottom;
+	}
+
+	.framer {
+		width: 250px;
+		height: 350px;
+	}
+	.framer img {
+		transition: transform 0.4s;
+		transform-origin: right;
+		transform-style: preserve-3d;
+	}
+	.framer:hover img {
+		transform: rotateY(90deg);
+		transform-origin: right;
+	}
+}
