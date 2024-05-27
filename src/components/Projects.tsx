@@ -34,7 +34,7 @@ export default function Projects() {
 								/>
 							))}
 						</div>
-						<div className="flex justify-center gap-3 bg-dark/75 w-[100px] p-3 absolute right-0 top-0 text-center">
+						<div className="flex justify-center gap-3 bg-dark/75 lg:w-[100px] p-3 absolute right-0 top-0 text-center">
 							{project.linksIcons.map((link) => (
 								<Link key={link.linkAlt} href={link.linkHref} target="_blank">
 									<Image
