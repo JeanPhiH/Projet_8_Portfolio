@@ -42,12 +42,6 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-/* h1, h2 {
-	font-family: "Ubuntu Mono";
-	font-weight: bold;
-	font-size: 1.25rem;
-} */
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -64,16 +58,13 @@ body {
 	clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
 	width: 400px;
 	height: 182px;
+}
+.frametl img {
 	transition: transform 0.4s;
 	transform-origin: top;
 	transform-style: preserve-3d;
 }
-
-/* .frametl:hover {
-	animation: wiggle 0.5s ease-in-out infinite
-} */
-
-.frametl:hover {
+.frametl:hover img {
 	transform: rotateX(90deg);
 	transform-origin: top;
 }
@@ -82,11 +73,13 @@ body {
 	clip-path: polygon(0 100%, 100% 100%, 35% 0, 0 0);
 	width: 400px;
 	height: 182px;
+}
+.framebl img {
 	transition: transform 0.4s;
 	transform-origin: bottom;
 	transform-style: preserve-3d;
 }
-.framebl:hover {
+.framebl:hover img {
 	transform: rotateX(90deg);
 	transform-origin: bottom;
 }
@@ -95,13 +88,15 @@ body {
 	clip-path: polygon(100% 0, 0% 50%, 100% 100%);
 	width: 250px;
 	height: 350px;
+}
+.framer img {
 	transition: transform 0.4s;
 	transform-origin: right;
 	transform-style: preserve-3d;
 }
-.framer:hover {
+.framer:hover img {
 	transform: rotateY(90deg);
 	transform-origin: right;
 	
 }
-/* flip animation */
+

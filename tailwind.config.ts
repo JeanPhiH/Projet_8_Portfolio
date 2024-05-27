@@ -18,13 +18,21 @@ const config: Config = {
     extend: {
 			keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-0.5deg)' },
-          '50%': { transform: 'rotate(0.5deg)' },
+          '0%': { transform: 'rotate(-0.5deg)' },
+          '1%': { transform: 'rotate(0.5deg)' },
+					'2%': { transform: 'rotate(-0.5deg)' },
+					'3%': { transform: 'rotate(0.5deg)' },
+					'4%': { transform: 'rotate(-0.5deg)' },
+					'5%': { transform: 'rotate(0.5deg)' },
+					'6%': { transform: 'rotate(-0.5deg)' },
+					'7%': { transform: 'rotate(0.5deg)' },
+					'8%': { transform: 'rotate(-0.5deg)' },
+					'100%': { transform: 'rotate(-0.5deg)' },
         }
       },
 			animation: {
         'spin-quick': 'spin 0.5s linear infinite',
-				'wiggle': 'wiggle 0.5s ease-in-out infinite',
+				'wiggle': 'wiggle 4s ease-in-out infinite',
 			},
 			fontFamily: {
 				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],

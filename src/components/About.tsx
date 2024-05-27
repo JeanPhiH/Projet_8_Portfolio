@@ -18,17 +18,17 @@ export default function About () {
 			</article>
 			
 			{/* PHOTOS */}
-			<div className="mx-auto relative mt-10 w-[400px] h-[375px]">
+			<div className="mx-auto relative mt-10 w-[400px] h-[375px] animate-wiggle hover:animate-none">
 				<p className="italic absolute left-4 top-5 w-1/2">Amateur de randonnées et de tourisme, j’aime explorer le monde qui m’entoure.</p>
 				<p className="italic absolute left-4 bottom-5 w-1/2">J’écris, anime et enregistre des sessions JDR, la dernière en date se déroule dans l’univers des backrooms.</p>
 				<p className="italic absolute top-28 right-0 w-1/3">À dix ans, j’écrivais mon premier code en basic sur un Amstrad cpc 464 à cassette.</p>
 				<div className="frametl absolute">
 					<Image className="object-cover h-full" src="/photos/paysage.webp" alt="Template" width={400} height={225}/>
 				</div>
-				<div className="framer absolute top-3 right-0">
+				<div className="framer absolute top-3 right-0 ">
 					<Image className="object-cover h-full" src="/photos/moi.webp" alt="Template" width={250} height={350}/>
 				</div>
-				<div className="framebl absolute bottom-0">
+				<div className="framebl absolute bottom-0 ">
 					<Image className="object-cover h-full" src="/photos/jdr.webp" alt="Template" width={400} height={225}/>
 				</div>
 			</div>
