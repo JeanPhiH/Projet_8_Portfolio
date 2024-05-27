@@ -18,19 +18,19 @@ export default function About () {
 			</article>
 			
 			{/* PHOTOS */}
-			<div className="w-[300px] h-[500px] mx-auto relative mt-10 md:w-[400px] md:h-[375px] md:animate-wiggle md:hover:animate-none">
-				<p className="italic md:absolute left-4 top-5 md:w-1/2">Amateur de randonnées et de tourisme, j’aime explorer le monde qui m’entoure.</p>
+			<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
+				<p className="italic lg:absolute left-4 top-5 lg:w-1/2">Amateur de randonnées et de tourisme, j’aime explorer le monde qui m’entoure.</p>
 				<div className="frametl absolute">
 					<Image className="object-cover h-full" src="/photos/paysage.webp" alt="Landscape" width={400} height={225}/>
 				</div>
-				<div className="framer absolute top-[58px] md:top-3 right-0 ">
+				<div className="framer absolute top-[58px] lg:top-3 right-0 ">
 					<Image className="object-cover h-full" src="/photos/moi.webp" alt="Me" width={250} height={350}/>
 				</div>
-				<p className="hidden md:block italic md:absolute top-28 right-0 md:w-1/3">À dix ans, j’écrivais mon premier code en basic sur un Amstrad cpc 464 à cassette.</p>
-				<div className="framebl absolute bottom-20 md:bottom-0 ">
+				<p className="hidden lg:block italic lg:absolute top-28 right-0 lg:w-1/3">À dix ans, j’écrivais mon premier code en basic sur un Amstrad cpc 464 à cassette.</p>
+				<div className="framebl absolute bottom-20 lg:bottom-0 ">
 					<Image className="object-cover h-full" src="/photos/jdr.webp" alt="RPG session" width={400} height={225}/>
 				</div>
-				<p className="italic mt-96 md:mt-0 md:absolute left-4 bottom-5 md:w-1/2">J’écris, anime et enregistre des sessions JDR, la dernière en date se déroule dans l’univers des backrooms.</p>
+				<p className="italic mt-96 lg:mt-0 lg:absolute left-4 bottom-5 lg:w-1/2">J’écris, anime et enregistre des sessions JDR, la dernière en date se déroule dans l’univers des backrooms.</p>
 			</div>
 		</section>
 	)

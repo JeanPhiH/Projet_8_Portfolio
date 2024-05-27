@@ -14,6 +14,8 @@
 }
 
 @tailwind components;
+
+
 @tailwind utilities;
 
 :root {
@@ -67,7 +69,7 @@ body {
 	z-index: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 	.frametl {
 		width: 400px;
 		height: 182px;
