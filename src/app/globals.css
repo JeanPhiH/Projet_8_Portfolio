@@ -2,7 +2,7 @@
 
 @layer base {
   h1, h2 {
-    @apply text-2xl font-bold font-ubuntumono text-highlight;
+    @apply text-2xl font-bold font-ubuntumono text-highlight text-center;
   }
 	h3 {
 		@apply text-lg text-highlight font-bold;
