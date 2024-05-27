@@ -5,10 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
-	const [navStyle, setNavStyle] = useState("hidden absolute bg-dark top-9 right-0 md:static md:flex flex-col md:flex-row items-start md:items-center justify-center gap-1 md:gap-2 p-2");
+
+	// Display burger menu by changing nav style
+	const defaultNavStyle = "hidden absolute bg-dark top-9 right-0 md:static md:flex flex-col md:flex-row items-start md:items-center justify-center gap-1 md:gap-2 p-2";
+	const [navStyle, setNavStyle] = useState(defaultNavStyle);
 	const displayBurger = () => {
-		if (navStyle !== "absolute bg-dark top-9 right-0 md:static flex flex-col md:flex-row items-start md:items-center justify-center gap-1 md:gap-2 p-2") setNavStyle("absolute bg-dark top-9 right-0 md:static flex flex-col md:flex-row items-start md:items-center justify-center gap-1 md:gap-2 p-2");
-        else setNavStyle("hidden absolute bg-dark top-9 right-0 md:static md:flex flex-col md:flex-row items-start md:items-center justify-center gap-1 md:gap-2 p-2");
+		if (navStyle === defaultNavStyle) setNavStyle(defaultNavStyle.replace("hidden", "flex"));
+        else setNavStyle(defaultNavStyle);
 
 
 	}
