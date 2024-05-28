@@ -20,10 +20,10 @@ export default function Projects() {
 							height={400}
 							className="lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover:scale-[0.33] duration-500 origin-top-left"
 						/>
-						<h3 className="bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-5 bottom-5 text-center lg:group-hover:left-0 lg:group-hover:bottom-[150px] duration-500">
+						<h3 className="bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-5 bottom-5 text-center lg:group-hover:left-20 lg:group-hover:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover:left-5 duration-500">
+						<div className="flex justify-center gap-3 bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover:left-20 duration-500">
 							{project.technoIcons.map((techno) => (
 								<Image
 									key={techno.technoAlt}
