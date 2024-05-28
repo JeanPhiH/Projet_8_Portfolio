@@ -1,6 +1,7 @@
 import Technos from '@/components/Technos';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
+import Ressources from '@/components/Ressources';
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
 			<Technos />
 			<About />
 			<Projects />
-			<section>Ressources</section>
+			<Ressources />
 			<section>Contact</section>
 		</>
   );
