@@ -4,7 +4,7 @@ import jsonProjects from "@/json/jsonProjects.json";
 
 export default function Projects() {
 	return (
-		<section className="px-4 mt-32" id="projects">
+		<section id="projects">
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-10 flex-col justify-center items-center ">
 				{/* PROJECTS FROM JSON FILE */}

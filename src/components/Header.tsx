@@ -32,7 +32,7 @@ export default function Header() {
   }, [navStyle]);
 
 	return (
-		<header className="z-10 flex bg-dark justify-between px-4 items-center border-b-2 border-b-light">
+		<header className="h-10 md:h-auto z-10 flex bg-dark justify-between px-4 items-center border-b-2 border-b-light">
 			<h1 className="md:text-2xl font-bold">JeanPhiH’s Portfolio</h1>
 			<nav className={navStyle}>
 				<MenuItem title="Accueil" href="/" src="/icons/home.svg" />
@@ -50,7 +50,7 @@ export default function Header() {
 				/>
 				<MenuItem
 					title="LinkedIn"
-					href="https://www.linkedin.com/in/jeanphiherfeld/"
+					href="https://www.linkedin.com/in/jp-herfeld/"
 					src="/icons/linkedin.svg"
 				/>
 			</nav>

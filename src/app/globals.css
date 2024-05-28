@@ -6,13 +6,16 @@
 		@apply text-2xl font-bold font-ubuntumono text-highlight text-center;
 	}
 	h2{
-		@apply w-2/3 border-b-2 border-highlight mx-auto;
+		@apply w-2/3 border-b-2 border-highlight mx-auto mb-5;
 	}
 	h3 {
 		@apply text-lg text-highlight font-bold;
 	}
 	h4 {
 		@apply text-highlight mt-4;
+	}
+	section {
+		@apply px-4 mt-32;
 	}
 }
 
