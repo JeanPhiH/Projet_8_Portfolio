@@ -17,10 +17,10 @@ export default function RsCard({
 	RsNote: string;
 }) {
 	return (
-		<div className="flex flex-col gap-2 items-center justify-between p-3 border-2 border-light w-52 h-80 rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light">
+		<div className="flex flex-col gap-2 items-center justify-between p-3 border-2 border-light w-52 h-96 rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light">
 			<Image src={RsIcon} alt={RsName} width={24} height={24} />
 			<h3>{RsName}</h3>
-			<Image src="/photos/presP7.png" alt={RsName} width={175} height={150} />
+			<Image className="object-cover object-top min-h-36 max-h-36" src={RsPic} alt={RsName} width={175} height={150} />
 			<p className="text-center h-40">{RsNote}</p>
 			<div className="flex gap-3">
 				<Link href={RsLink} target="_blank">
