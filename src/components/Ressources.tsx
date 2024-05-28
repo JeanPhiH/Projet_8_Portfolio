@@ -9,7 +9,7 @@ export default function Ressources() {
 				explications y sont claires et permettent de progresser plus facilement
 				sur certains concepts ardus.
 			</p>
-			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-5">
+			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-8">
 				<RsCard
 					RsName="Pierre Giraud"
 					RsIcon="/icons/pierregiraud.png"
