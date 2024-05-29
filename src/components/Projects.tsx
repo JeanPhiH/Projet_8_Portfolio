@@ -11,7 +11,7 @@ export default function Projects() {
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
-						className="relative group flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-lg border-double border-light"
+						className="relative group flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-xl border-double border-light"
 					>
 						<Image
 							src={project.imgSrc}
