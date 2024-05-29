@@ -17,6 +17,9 @@
 	section {
 		@apply px-4 mt-32;
 	}
+	input, textarea {
+		@apply w-full p-2 bg-dark text-light rounded-lg focus:outline focus:outline-2 focus:outline-highlight;
+	}
 }
 
 @tailwind components;
@@ -55,6 +58,11 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
+	
+}
+
+.reset {
+	all: unset;
 }
 
 .frametl {

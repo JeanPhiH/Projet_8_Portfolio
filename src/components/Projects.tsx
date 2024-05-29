@@ -47,7 +47,7 @@ export default function Projects() {
 							))}
 						</div>
 						<div className="lg:w-1/3"></div>
-						<article className="p-4 lg:w-[350px]">
+						<article className="p-4 lg:w-1/2">
 							<h4>Mission</h4>
 							<p>{project.mission}</p>
 							<h4>Contraintes</h4>

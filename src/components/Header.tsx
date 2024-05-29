@@ -44,8 +44,8 @@ export default function Header() {
 				/>
 				<MenuItem title="CV" href="/cv" src="/icons/cv.svg" />
 				<MenuItem
-					title="E-mail"
-					href="mailto:jp.herfeld@gmail.com"
+					title="Contact"
+					href="/#contact"
 					src="/icons/mail.svg"
 				/>
 				<MenuItem
