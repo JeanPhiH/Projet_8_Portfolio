@@ -7,7 +7,7 @@ export default function Contact() {
 		<section id="contact">
 			<h2>Contact</h2>
 			<form
-				className="sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/50"
+				className="sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
 				action={async (formData) => {
 					await sendEmail(formData);
 				}}

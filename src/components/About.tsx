@@ -20,14 +20,14 @@ export default function About () {
 			{/* PHOTOS */}
 			<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
 				<p className="italic text-center lg:absolute left-4 top-5 lg:w-1/2">Amateur de randonnées et de tourisme, j’aime explorer le monde qui m’entoure.</p>
-				<div className="frametl absolute">
+				<div className="frametl absolute rounded-tl-xl overflow-hidden">
 					<Image className="object-cover h-full" src="/photos/paysage.webp" alt="Landscape" width={400} height={225}/>
 				</div>
 				<div className="framer absolute top-[58px] lg:top-3 right-0 ">
 					<Image className="object-cover h-full" src="/photos/moi.webp" alt="Me" width={250} height={350}/>
 				</div>
 				<p className="hidden text-center lg:block italic lg:absolute top-28 right-0 lg:w-1/3">À dix ans, j’écrivais mon premier code en basic sur un Amstrad cpc 464 à cassette.</p>
-				<div className="framebl absolute bottom-20 lg:bottom-0 ">
+				<div className="framebl absolute bottom-20 lg:bottom-0 rounded-bl-xl overflow-hidden">
 					<Image className="object-cover h-full" src="/photos/jdr.webp" alt="RPG session" width={400} height={225}/>
 				</div>
 				<p className="italic text-center mt-96 lg:mt-0 lg:absolute left-4 bottom-5 lg:w-1/2">J’écris, anime et enregistre des sessions JDR, la dernière en date se déroule dans l’univers des backrooms.</p>
