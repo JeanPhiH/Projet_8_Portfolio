@@ -22,7 +22,7 @@ export default function Contact() {
 				size={24}
 			/>
 			{submitted ? (
-				<div className="sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg">
+				<div className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg">
 					<p className="w-full p-2 bg-dark text-light rounded-lg text-center">
 						Merci, votre message a été envoyé !
 						<br />
@@ -31,7 +31,7 @@ export default function Contact() {
 				</div>
 			) : (
 				<form
-					className="sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
+					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
 					action={async (formData) => {
 						await sendEmail(formData);
 						setSubmitted(true);

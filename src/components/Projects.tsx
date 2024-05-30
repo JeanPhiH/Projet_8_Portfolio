@@ -12,14 +12,14 @@ export default function Projects() {
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
-						className="relative group flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-xl border-double border-light"
+						className="relative group/project flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-xl border-double border-light"
 					>
 						<Image
 							src={project.imgSrc}
 							alt={project.imgAlt}
 							width={500}
 							height={400}
-							className="lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover:scale-[0.33] duration-500 origin-top-left"
+							className="lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover/project:scale-[0.33] duration-500 origin-top-left"
 						/>
 						<h3 className="bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-5 bottom-5 text-center lg:group-hover:left-20 lg:group-hover:bottom-[150px] duration-500">
 							{project.title}
@@ -35,22 +35,23 @@ export default function Projects() {
 								/>
 							))}
 						</div>
-						<div className="flex justify-center gap-3 bg-dark/75 lg:w-[100px] p-3 absolute right-0 top-0 text-center">
+						<div className="flex flex-col justify-center items-center gap-3 bg-dark/75 p-1 lg:p-3 absolute right-0 top-0">
 							{project.linksIcons.map((link) => (
-								// <MenuItem
-								// 	key={link.linkAlt}
-								// 	title=""
-								// 	href={link.linkHref}
-								// 	src={link.linkSrc}
-								// />
-								<Link key={link.linkAlt} href={link.linkHref} target="_blank">
-									<Image
-										src={link.linkSrc}
-										alt={link.linkAlt}
-										width={24}
-										height={24}
-									/>
-								</Link>
+								<MenuItem
+									key={link.linkAlt}
+									title=""
+									href={link.linkHref}
+									src={link.linkSrc}
+									size={48}
+								/>
+								// <Link key={link.linkAlt} href={link.linkHref} target="_blank">
+								// 	<Image
+								// 		src={link.linkSrc}
+								// 		alt={link.linkAlt}
+								// 		width={24}
+								// 		height={24}
+								// 	/>
+								// </Link>
 							))}
 						</div>
 						<div className="lg:w-1/3"></div>
