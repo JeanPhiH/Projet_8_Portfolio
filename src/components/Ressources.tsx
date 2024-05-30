@@ -7,7 +7,7 @@ export default function Ressources() {
 			<p className="mt-5 w-4/5 mx-auto">
 				Voici les sites ou vidéos qui m’ont aidé et m’aident à me former. Les
 				explications y sont claires et permettent de progresser plus facilement
-				sur certains concepts ardus.
+				sur certains concepts.
 			</p>
 			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-8">
 				<RsCard

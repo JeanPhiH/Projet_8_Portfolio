@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import jsonProjects from "@/json/jsonProjects.json";
+import MenuItem from "./MenuItem";
 
 export default function Projects() {
 	return (
@@ -36,6 +37,12 @@ export default function Projects() {
 						</div>
 						<div className="flex justify-center gap-3 bg-dark/75 lg:w-[100px] p-3 absolute right-0 top-0 text-center">
 							{project.linksIcons.map((link) => (
+								// <MenuItem
+								// 	key={link.linkAlt}
+								// 	title=""
+								// 	href={link.linkHref}
+								// 	src={link.linkSrc}
+								// />
 								<Link key={link.linkAlt} href={link.linkHref} target="_blank">
 									<Image
 										src={link.linkSrc}

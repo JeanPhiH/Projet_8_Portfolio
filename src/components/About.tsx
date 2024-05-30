@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import MenuItem from "./MenuItem";
 
 export default function About () {
 	return (
-		<section className="md:flex flex-col lg:flex-row-reverse md:justify-between">
+		<section className="md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
 
 			{/* BIO */}
 			<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 lg:px-20 lg:self-center">
@@ -13,6 +14,8 @@ export default function About () {
 				<p>J’ai étudié chez OpenClassrooms et j’y ai aimé l’importance accordée à la <span className="text-highlight">pratique</span> et à l’<span className="text-highlight">autonomie</span>.</p>
 				<p>J’aime les distributions <span className="text-highlight">Linux</span>, la logique <span className="text-highlight">React</span> et les <span className="text-highlight">animations CSS</span>.</p>
 				<p>Je suis curieux de tout et aime les challenges qu’offre la vie.</p>
+				<p>Mon CV est consultable ici:</p>
+				<MenuItem title="CV" href="/cv" src="/icons/cv.svg" />
 				<p className="mt-4">Ma maxime du moment: </p>
 				<blockquote className="italic">C’est dans la contrainte que nait l’inspiration.</blockquote>
 			</article>
