@@ -28,11 +28,15 @@ const config: Config = {
 					'7%': { transform: 'rotate(0.5deg)' },
 					'8%': { transform: 'rotate(-0.5deg)' },
 					'100%': { transform: 'rotate(-0.5deg)' },
-        }
+        },
+				orbit: {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },}
       },
 			animation: {
         'spin-quick': 'spin 0.5s linear infinite',
 				'wiggle': 'wiggle 4s ease-in-out infinite',
+				'orbit': 'orbit 10s linear infinite',
 			},
 			fontFamily: {
 				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],
