@@ -5,10 +5,12 @@ export default function MenuItem({
 	title,
 	href,
 	src,
+	size,
 }: {
 	title: string;
 	href: string;
 	src: string;
+	size: number;
 }) {
 	return (
 		<Link
@@ -21,8 +23,8 @@ export default function MenuItem({
 				className="text-light relative z-10 w-10 h-10 md:w-6 md:h-6"
 				src={src}
 				alt={title}
-				width={24}
-				height={24}
+				width={size}
+				height={size}
 			/>
 			<span className="">{title}</span>
 		</Link>

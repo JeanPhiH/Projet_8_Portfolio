@@ -19,6 +19,7 @@ export default function Contact() {
 				title="LinkedIn"
 				href="https://www.linkedin.com/in/jp-herfeld/"
 				src="/icons/linkedin.svg"
+				size={24}
 			/>
 			{submitted ? (
 				<div className="sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg">
