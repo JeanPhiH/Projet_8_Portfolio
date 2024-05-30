@@ -62,7 +62,7 @@
 				"linkHref": "https://github.com/JeanPhiH/Projet_5"
 			},
 			{
-				"linkAlt": "external-link",
+				"linkAlt": "site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://jeanphih.github.io/Projet_5/"
 			}
@@ -101,7 +101,7 @@
 				"linkHref": "https://github.com/JeanPhiH/Projet_6"
 			},
 			{
-				"linkAlt": "external-link",
+				"linkAlt": "site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://projet-6-psi.vercel.app/"
 			}

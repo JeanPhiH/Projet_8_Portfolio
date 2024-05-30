@@ -11,7 +11,7 @@ export default function Contact() {
 		<section id="contact" className="flex flex-col items-center">
 			<h2>Contact</h2>
 			<p>Mes compétences vous intéressent et vous souhaitez me contacter ?</p>
-			<p>
+			<p className="mb-3">
 				Vous pouvez le faire avec le formulaire ci-dessous, ou via via ma page
 				LinkedIn.
 			</p>
