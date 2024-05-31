@@ -6,11 +6,11 @@ export default function Technos() {
 			<h2 className="text-highlight">Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
 
-				<div className="absolute z10 h-16 w-16  bg-light rounded-full"></div>
+				
 
 				<div className="absolute z-5 animate-[orbit_20s_6s_linear_infinite]">
 					<Image
-						className=" lg:w-14 animate-[selfrotate_20s_6s_linear_infinite]"
+						className="lg:w-10 animate-[selfrotate_20s_6s_linear_infinite]"
 						src="/icons/nextjs-stroke.svg"
 						alt="NextJS"
 						width={30}
@@ -20,7 +20,7 @@ export default function Technos() {
 
 				<div className="absolute z-5 animate-[orbit_20s_4s_linear_infinite]">
 					<Image
-						className="lg:w-14 animate-[selfrotate_20s_4s_linear_infinite]"
+						className="lg:w-10 animate-[selfrotate_20s_4s_linear_infinite]"
 						src="/icons/typescript-icon.svg"
 						alt="TypeScript"
 						width={30}
@@ -30,7 +30,7 @@ export default function Technos() {
 				
 				<div className="absolute z-5 animate-[orbit_20s_2s_linear_infinite]">
 					<Image
-						className="lg:w-14 animate-[selfrotate_20s_2s_linear_infinite]"
+						className="lg:w-10 animate-[selfrotate_20s_2s_linear_infinite]"
 						src="/icons/tailwind-css.svg"
 						alt="TailwindCSS"
 						width={30}
@@ -39,7 +39,7 @@ export default function Technos() {
 				</div>
 				<div className="absolute z-5 animate-orbit">
 					<Image
-						className="lg:w-14 animate-selfrotate"
+						className="lg:w-10 animate-selfrotate"
 						src="/icons/mongodb-icon.svg"
 						alt="MongoDB"
 						width={30}
@@ -65,6 +65,7 @@ export default function Technos() {
 						</text>
 					</svg>
 				</div>
+				<div className="absolute z-10 h-16 w-16  bg-light rounded-full"></div>
 			</div>
 		</section>
 	);
