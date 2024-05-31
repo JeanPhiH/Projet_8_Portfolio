@@ -30,13 +30,19 @@ const config: Config = {
 					'100%': { transform: 'rotate(-0.5deg)' },
         },
 				orbit: {
+					'0%': { transform: 'rotate(0deg) translateX(-160px)' },
+					'100%': { transform: 'rotate(360deg) translateX(-160px)' },
+				},
+				selfrotate: {
 					'0%': { transform: 'rotate(0deg)' },
-					'100%': { transform: 'rotate(360deg)' },}
+					'100%': { transform: 'rotate(-360deg)' },
+				}
       },
 			animation: {
         'spin-quick': 'spin 0.5s linear infinite',
 				'wiggle': 'wiggle 4s ease-in-out infinite',
-				'orbit': 'orbit 10s linear infinite',
+				'orbit': 'orbit 20s linear infinite',
+				'selfrotate': 'selfrotate 20s linear infinite',
 			},
 			fontFamily: {
 				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],
