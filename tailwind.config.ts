@@ -29,9 +29,21 @@ const config: Config = {
 					'8%': { transform: 'rotate(-0.5deg)' },
 					'100%': { transform: 'rotate(-0.5deg)' },
         },
-				orbit: {
+				orbitxn: {
 					'0%': { transform: 'rotate(0deg) translateX(-160px)' },
 					'100%': { transform: 'rotate(360deg) translateX(-160px)' },
+				},
+				orbitxp: {
+					'0%': { transform: 'rotate(0deg) translateX(160px)' },
+					'100%': { transform: 'rotate(360deg) translateX(160px)' },
+				},
+				orbityn: {
+					'0%': { transform: 'rotate(0deg) translateY(-160px)' },
+					'100%': { transform: 'rotate(360deg) translateY(-160px)' },
+				},
+				orbityp: {
+					'0%': { transform: 'rotate(0deg) translateY(160px)' },
+					'100%': { transform: 'rotate(360deg) translateY(160px)' },
 				},
 				selfrotate: {
 					'0%': { transform: 'rotate(0deg)' },
@@ -39,9 +51,12 @@ const config: Config = {
 				}
       },
 			animation: {
-        'spin-quick': 'spin 0.5s linear infinite',
+        'spin-quick': 'spin 1s linear infinite',
 				'wiggle': 'wiggle 4s ease-in-out infinite',
-				'orbit': 'orbit 20s linear infinite',
+				'orbityn': 'orbityn 20s linear infinite',
+				'orbityp': 'orbityp 20s linear infinite',
+				'orbitxn': 'orbitxn 20s linear infinite',
+				'orbitxp': 'orbitxp 20s linear infinite',
 				'selfrotate': 'selfrotate 20s linear infinite',
 			},
 			fontFamily: {

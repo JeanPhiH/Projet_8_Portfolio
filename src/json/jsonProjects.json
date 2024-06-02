@@ -19,7 +19,7 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_3"
 			}
@@ -57,12 +57,12 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_5"
 			},
 			{
-				"linkAlt": "site",
+				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://jeanphih.github.io/Projet_5/"
 			}
@@ -96,12 +96,12 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_6"
 			},
 			{
-				"linkAlt": "site",
+				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://projet-6-psi.vercel.app/"
 			}
@@ -139,7 +139,7 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_7"
 			}
