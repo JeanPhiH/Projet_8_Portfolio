@@ -51,7 +51,7 @@ const config: Config = {
 				}
       },
 			animation: {
-        'spin-quick': 'spin 1s linear infinite',
+        // 'spin-quick': 'spin 0.5s linear infinite',
 				'wiggle': 'wiggle 4s ease-in-out infinite',
 				'orbityn': 'orbityn 20s linear infinite',
 				'orbityp': 'orbityp 20s linear infinite',

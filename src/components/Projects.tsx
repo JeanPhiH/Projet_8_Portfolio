@@ -41,17 +41,10 @@ export default function Projects() {
 									key={link.linkAlt}
 									title={link.linkAlt}
 									href={link.linkHref}
+									target={link.linkTarget}
 									src={link.linkSrc}
 									size={32}
 								/>
-								// <Link key={link.linkAlt} href={link.linkHref} target="_blank">
-								// 	<Image
-								// 		src={link.linkSrc}
-								// 		alt={link.linkAlt}
-								// 		width={24}
-								// 		height={24}
-								// 	/>
-								// </Link>
 							))}
 						</div>
 						<div className="lg:w-1/3"></div>

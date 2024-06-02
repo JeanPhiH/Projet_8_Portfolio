@@ -21,7 +21,8 @@
 			{
 				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
-				"linkHref": "https://github.com/JeanPhiH/Projet_3"
+				"linkHref": "https://github.com/JeanPhiH/Projet_3",
+				"linkTarget": "_blank"
 			}
 		],
 		"mission": "Créer le front-end dynamique d'un site portfolio d'une architecte d'intérieur",
@@ -59,12 +60,14 @@
 			{
 				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
-				"linkHref": "https://github.com/JeanPhiH/Projet_5"
+				"linkHref": "https://github.com/JeanPhiH/Projet_5",
+				"linkTarget": "_blank"
 			},
 			{
 				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
-				"linkHref": "https://jeanphih.github.io/Projet_5/"
+				"linkHref": "https://jeanphih.github.io/Projet_5/",
+				"linkTarget": "_blank"
 			}
 		],
 		"mission": "Débuguer et optimiser un site web pour le rendre plus rapide, plus performant et mieux référencé grâce au SEO",
@@ -98,12 +101,14 @@
 			{
 				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
-				"linkHref": "https://github.com/JeanPhiH/Projet_6"
+				"linkHref": "https://github.com/JeanPhiH/Projet_6",
+				"linkTarget": "_blank"
 			},
 			{
 				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
-				"linkHref": "https://projet-6-psi.vercel.app/"
+				"linkHref": "https://projet-6-psi.vercel.app/",
+				"linkTarget": "_blank"
 			}
 		],
 		"mission": "Créer le front-end d'un site de location immobilière",
@@ -141,7 +146,8 @@
 			{
 				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
-				"linkHref": "https://github.com/JeanPhiH/Projet_7"
+				"linkHref": "https://github.com/JeanPhiH/Projet_7",
+				"linkTarget": "_blank"
 			}
 		],
 		"mission": "Créer le back-end d'un site de notation de livres",
