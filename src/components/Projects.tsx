@@ -5,7 +5,7 @@ import MenuItem from "./MenuItem";
 
 export default function Projects() {
 	return (
-		<section id="projects">
+		<section id="projects" className="max-w-screen-xl mx-auto">
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-10 flex-col justify-center items-center ">
 				{/* PROJECTS FROM JSON FILE */}
@@ -43,7 +43,7 @@ export default function Projects() {
 									href={link.linkHref}
 									target={link.linkTarget}
 									src={link.linkSrc}
-									size={32}
+									size={24}
 								/>
 							))}
 						</div>

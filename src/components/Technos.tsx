@@ -1,13 +1,11 @@
 import Image from "next/image";
+import MenuItem from "./MenuItem";
 
 export default function Technos() {
 	return (
-		<section className="p-10 md:rounded-xl bg-light/15 flex flex-col items-center md:w-2/3 md:mx-auto shadow-lg shadow-light/50">
+		<section className="bg-[url('/photos/space.jpg')] bg-fixed p-10 md:rounded-xl flex flex-col justify-center items-center md:mx-auto shadow-light/50">
 			<h2 className="text-highlight">Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
-
-				
-
 				<div className="absolute z-5 animate-orbitxn">
 					<Image
 						className="lg:w-10 animate-selfrotate"
@@ -27,7 +25,7 @@ export default function Technos() {
 						height={30}
 					/>
 				</div>
-				
+
 				<div className="absolute z-5 animate-orbitxp">
 					<Image
 						className="lg:w-10 animate-selfrotate"
@@ -65,7 +63,15 @@ export default function Technos() {
 						</text>
 					</svg>
 				</div>
-				<div className="absolute z-10 h-16 w-16  bg-light rounded-full"></div>
+				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark h-20 w-20">
+					<MenuItem
+						title="Github"
+						href="https://github.com/JeanPhiH/Projet_8_Portfolio"
+						target="_blank"
+						src="/icons/github.svg"
+						size={24}
+					/>
+				</div>
 			</div>
 		</section>
 	);
