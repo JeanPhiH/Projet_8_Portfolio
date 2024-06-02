@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MenuItem from "./MenuItem";
 
 export default function RsCard({
 	RsName,
@@ -17,13 +18,33 @@ export default function RsCard({
 	RsNote: string;
 }) {
 	return (
-		<div className="flex flex-col gap-2 items-center justify-between p-3 border-2 border-light w-52 h-96 rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light/50">
+		<div className="flex flex-col gap-2 items-center justify-between px-3 py-5 border-2 border-light w-52 h-[465px] rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light/50">
 			<Image src={RsIcon} alt={RsName} width={24} height={24} />
 			<h3>{RsName}</h3>
-			<Image className="object-cover object-top min-h-36 max-h-36" src={RsPic} alt={RsName} width={175} height={150} />
+			<Image
+				className="object-cover object-top min-h-36 max-h-36"
+				src={RsPic}
+				alt={RsName}
+				width={175}
+				height={150}
+			/>
 			<p className="text-center h-40">{RsNote}</p>
 			<div className="flex gap-3">
-				<Link href={RsLink} target="_blank">
+				<MenuItem
+					title="Site"
+					href={RsLink}
+					target="_blank"
+					src="/icons/websitefilled.svg"
+					size={24}
+				/>
+				<MenuItem
+					title="Youtube"
+					href={RsLinkYT}
+					target="_blank"
+					src="/icons/youtube.svg"
+					size={24}
+				/>
+				{/* <Link href={RsLink} target="_blank">
 					<Image
 						src="/icons/websitefilled.svg"
 						alt={RsName}
@@ -38,7 +59,7 @@ export default function RsCard({
 						width={24}
 						height={24}
 					/>
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 	);
