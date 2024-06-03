@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 export default function About () {
 	return (
-		<section className="max-w-screen-xl mx-auto md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
+		<section className="md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
 
 			{/* BIO */}
 			<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 lg:px-20 lg:self-center">

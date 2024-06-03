@@ -8,7 +8,7 @@ export default function Contact() {
 	const [submitted, setSubmitted] = useState(false);
 
 	return (
-		<section id="contact" className="max-w-screen-xl mx-auto flex flex-col items-center">
+		<section id="contact" className="flex flex-col items-center">
 			<h2>Contact</h2>
 			<p>Mes compétences vous intéressent et vous souhaitez me contacter ?</p>
 			<p className="mb-3">
