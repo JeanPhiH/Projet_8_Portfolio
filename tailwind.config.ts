@@ -61,7 +61,8 @@ const config: Config = {
 			},
 			fontFamily: {
 				ubuntu: ['var(--font-ubuntu)', 'sans-serif'],
-				ubuntumono: ['var(--font-ubuntumono)', 'monospace']
+				ubuntumono: ['var(--font-ubuntumono)', 'monospace'],
+				galindo: ['var(--font-galindo)', 'sans-serif'],
 			},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

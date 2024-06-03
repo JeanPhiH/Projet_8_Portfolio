@@ -3,10 +3,13 @@
 @layer base {
 	h1,
 	h2 {
-		@apply text-2xl font-bold font-ubuntumono text-highlight text-center;
+		@apply font-bold text-highlight text-center;
 	}
-	h2{
-		@apply w-2/3 border-b-2 border-highlight mx-auto mb-10;
+	h1 {
+		@apply text-3xl font-galindo;
+	}
+	h2 {
+		@apply text-2xl w-2/3 border-b-2 border-highlight mx-auto mb-10 font-ubuntumono;
 	}
 	h3 {
 		@apply text-lg text-highlight font-bold;
@@ -17,13 +20,13 @@
 	section {
 		@apply px-4 mt-32 max-w-screen-xl mx-auto;
 	}
-	input, textarea {
-		@apply w-full p-2 bg-dark text-light rounded-lg focus:outline focus:outline-2 focus:outline-highlight hover:outline hover:outline-2  hover:outline-light ;
+	input,
+	textarea {
+		@apply w-full p-2 bg-dark text-light rounded-lg focus:outline focus:outline-2 focus:outline-highlight hover:outline hover:outline-2  hover:outline-light;
 	}
 }
 
 @tailwind components;
-
 
 @tailwind utilities;
 
@@ -43,7 +46,6 @@
 
 body {
 	margin: 0 auto;
-	/* max-width: 1280px; */
 	color: rgb(var(--color-light));
 	background-color: rgb(var(--color-dark));
 	/* background: linear-gradient(
@@ -58,7 +60,6 @@ body {
 	.text-balance {
 		text-wrap: balance;
 	}
-	
 }
 
 .reset {

@@ -36,23 +36,49 @@ export default function Header() {
 
 	return (
 		<header className="max-w-screen-xl mx-auto h-11 md:h-auto z-10 flex bg-dark justify-between px-4 items-center border-b-2 border-b-light">
-			<h1 className="md:text-2xl font-bold">JeanPhiH’s Portfolio</h1>
+			<h1>jphindev</h1>
 			<nav className={navStyle}>
-				<MenuItem title="Accueil" href="/" target="_self" src="/icons/home.svg" size={24}/>
-				<MenuItem title="Projets" href="/#projects" target="_self" src="/icons/project.svg" size={24} />
+				<MenuItem
+					title="Accueil"
+					href="/"
+					target="_self"
+					src="/icons/home.svg"
+					size={24}
+				/>
+				<MenuItem
+					title="Projets"
+					href="/#projects"
+					target="_self"
+					src="/icons/project.svg"
+					size={24}
+				/>
 				<MenuItem
 					title="Avis"
 					href="/testimonials"
-					target="_self" 
-					src="/icons/testimonial.svg" size={24}
+					target="_self"
+					src="/icons/testimonial.svg"
+					size={24}
 				/>
-				<MenuItem title="CV" href="/cv" target="_blank" src="/icons/cv.svg" size={24} />
-				<MenuItem title="Contact" href="/#contact" target="_self" src="/icons/mail.svg" size={24} />
+				<MenuItem
+					title="CV"
+					href="/cv"
+					target="_blank"
+					src="/icons/cv.svg"
+					size={24}
+				/>
+				<MenuItem
+					title="Contact"
+					href="/#contact"
+					target="_self"
+					src="/icons/mail.svg"
+					size={24}
+				/>
 				<MenuItem
 					title="LinkedIn"
 					href="https://www.linkedin.com/in/jp-herfeld/"
-					target="_blank" 
-					src="/icons/linkedin.svg" size={24}
+					target="_blank"
+					src="/icons/linkedin.svg"
+					size={24}
 				/>
 			</nav>
 			<Image
