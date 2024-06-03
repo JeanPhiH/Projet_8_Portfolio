@@ -25,7 +25,7 @@ export default function MenuItem({
 			<Image
 				className="text-light relative z-5"
 				src={src}
-				alt={title}
+				alt={`Lien vers ${title}`}
 				width={size}
 				height={size}
 			/>

@@ -40,6 +40,7 @@ export default function Contact() {
 				>
 					<label htmlFor="name">Nom</label>
 					<input
+						id="name"
 						type="text"
 						name="name"
 						placeholder="Nom"
@@ -47,9 +48,10 @@ export default function Contact() {
 						className=""
 					/>
 					<label htmlFor="email">Email</label>
-					<input type="email" name="email" placeholder="Email" required />
+					<input id="email" type="email" name="email" placeholder="Email" required />
 					<label htmlFor="message">Message</label>
 					<textarea
+						id="message"
 						name="message"
 						placeholder="Message"
 						maxLength={5000}

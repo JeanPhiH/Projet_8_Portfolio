@@ -9,7 +9,7 @@ export default function About () {
 			<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 lg:px-20 lg:self-center">
 				<h2>Qui suis-je ?</h2>
 				<p className="mt-5">Je m’appelle</p>
-				<p className="text-highlight text-3xl md:text-4xl font-bold my-2">Jean-Philippe Herfeld</p>
+				<h3 className="text-highlight text-3xl md:text-4xl font-bold my-2">Jean-Philippe Herfeld</h3>
 				<p>et je suis développeur web junior.</p>
 				<p>J’ai étudié chez OpenClassrooms et j’y ai aimé l’importance accordée à la <span className="text-highlight">pratique</span> et à l’<span className="text-highlight">autonomie</span>.</p>
 				<p>J’aime les distributions <span className="text-highlight">Linux</span>, la logique <span className="text-highlight">React</span> et les <span className="text-highlight">animations CSS</span>.</p>

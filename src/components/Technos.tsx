@@ -3,14 +3,14 @@ import MenuItem from "./MenuItem";
 
 export default function Technos() {
 	return (
-		<section className="max-w-none bg-[url('/photos/space.jpg')] bg-fixed p-10 md:rounded-xl flex flex-col justify-center items-center md:mx-auto shadow-light/50">
+		<section className="max-w-none bg-[url('/photos/space.webp')] bg-fixed p-10 md:rounded-xl flex flex-col justify-center items-center md:mx-auto shadow-light/50">
 			<h2 className="text-highlight">Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
 				<div className="absolute animate-orbitxn">
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/nextjs-stroke.svg"
-						alt="NextJS"
+						alt="Logo NextJS"
 						width={30}
 						height={30}
 					/>
@@ -20,7 +20,7 @@ export default function Technos() {
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/typescript-icon.svg"
-						alt="TypeScript"
+						alt="Logo TypeScript"
 						width={30}
 						height={30}
 					/>
@@ -30,7 +30,7 @@ export default function Technos() {
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/tailwind-css.svg"
-						alt="TailwindCSS"
+						alt="Logo TailwindCSS"
 						width={30}
 						height={30}
 					/>
@@ -39,7 +39,7 @@ export default function Technos() {
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/mongodb-icon.svg"
-						alt="MongoDB"
+						alt="Logo MongoDB"
 						width={30}
 						height={30}
 					/>

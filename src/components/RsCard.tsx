@@ -19,12 +19,12 @@ export default function RsCard({
 }) {
 	return (
 		<div className="flex flex-col gap-2 items-center justify-between px-3 py-5 border-2 border-light w-52 h-[465px] rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light/50">
-			<Image src={RsIcon} alt={RsName} width={24} height={24} />
+			<Image src={RsIcon} alt={`logo ${RsName}`} width={24} height={24} />
 			<h3>{RsName}</h3>
 			<Image
 				className="object-cover object-top min-h-36 max-h-36"
 				src={RsPic}
-				alt={RsName}
+				alt={`image ${RsName}`}
 				width={175}
 				height={150}
 			/>
@@ -44,22 +44,6 @@ export default function RsCard({
 					src="/icons/youtube.svg"
 					size={24}
 				/>
-				{/* <Link href={RsLink} target="_blank">
-					<Image
-						src="/icons/websitefilled.svg"
-						alt={RsName}
-						width={24}
-						height={24}
-					/>
-				</Link>
-				<Link href={RsLinkYT} target="_blank">
-					<Image
-						src="/icons/youtube.svg"
-						alt={RsName}
-						width={24}
-						height={24}
-					/>
-				</Link> */}
 			</div>
 		</div>
 	);
