@@ -19,7 +19,7 @@ export default function MenuItem({
 			key={title}
 			href={href}
 			target={target}
-			className="flex flex-col items-center justify-center w-20 h-20 md:my-2 relative group p-1 md:p-2"
+			className="flex flex-col items-center justify-center w-16 h-16  relative group p-1 md:p-2"
 		>
 			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 group-hover:shadow-none border-highlight md:group-hover:border-y-2 md:group-hover:animate-spin bg-highlight/10"></div>
 			<Image
@@ -29,7 +29,7 @@ export default function MenuItem({
 				width={size}
 				height={size}
 			/>
-			<span className="">{title}</span>
+			<span className="text-sm">{title}</span>
 		</Link>
 	);
 }

@@ -6,7 +6,7 @@ export default function Technos() {
 		<section className="max-w-none bg-[url('/photos/space.jpg')] bg-fixed p-10 md:rounded-xl flex flex-col justify-center items-center md:mx-auto shadow-light/50">
 			<h2 className="text-highlight">Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
-				<div className="absolute z-5 animate-orbitxn">
+				<div className="absolute animate-orbitxn">
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/nextjs-stroke.svg"
@@ -16,7 +16,7 @@ export default function Technos() {
 					/>
 				</div>
 
-				<div className="absolute z-5 animate-orbityn">
+				<div className="absolute animate-orbityn">
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/typescript-icon.svg"
@@ -26,7 +26,7 @@ export default function Technos() {
 					/>
 				</div>
 
-				<div className="absolute z-5 animate-orbitxp">
+				<div className="absolute animate-orbitxp">
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/tailwind-css.svg"
@@ -35,7 +35,7 @@ export default function Technos() {
 						height={30}
 					/>
 				</div>
-				<div className="absolute z-5 animate-orbityp">
+				<div className="absolute animate-orbityp">
 					<Image
 						className="lg:w-10 animate-selfrotate"
 						src="/icons/mongodb-icon.svg"
@@ -63,7 +63,7 @@ export default function Technos() {
 						</text>
 					</svg>
 				</div>
-				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark h-20 w-20">
+				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark h-16 w-16">
 					<MenuItem
 						title="Github"
 						href="https://github.com/JeanPhiH/Projet_8_Portfolio"
