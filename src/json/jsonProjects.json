@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Front-end JS d’un site portfolio",
-		"imgSrc": "/photos/presP3.png",
+		"imgSrc": "/photos/presP3_85.webp",
 		"imgAlt": "Projet Javascript",
 		"technoIcons": [
 			{
@@ -19,7 +19,7 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "lien Github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_3",
 				"linkTarget": "_blank"
@@ -58,13 +58,13 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "lien Github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_5",
 				"linkTarget": "_blank"
 			},
 			{
-				"linkAlt": "lien Site",
+				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://jeanphih.github.io/Projet_5/",
 				"linkTarget": "_blank"
@@ -99,13 +99,13 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "lien Github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_6",
 				"linkTarget": "_blank"
 			},
 			{
-				"linkAlt": "lien Site",
+				"linkAlt": "Site",
 				"linkSrc": "/icons/external-link.svg",
 				"linkHref": "https://projet-6-psi.vercel.app/",
 				"linkTarget": "_blank"
@@ -144,7 +144,7 @@
 		],
 		"linksIcons": [
 			{
-				"linkAlt": "lien Github",
+				"linkAlt": "Github",
 				"linkSrc": "/icons/github.svg",
 				"linkHref": "https://github.com/JeanPhiH/Projet_7",
 				"linkTarget": "_blank"

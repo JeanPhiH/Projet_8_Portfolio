@@ -52,18 +52,18 @@ export default function Header() {
 					src="/icons/project.svg"
 					size={24}
 				/>
-				{/* <MenuItem
-					title="Avis"
-					href="/testimonials"
-					target="_self"
-					src="/icons/testimonial.svg"
-					size={24}
-				/> */}
 				<MenuItem
 					title="Contact"
 					href="/#contact"
 					target="_self"
 					src="/icons/mail.svg"
+					size={24}
+				/>
+				<MenuItem
+					title="Avis"
+					href="/testimonials"
+					target="_self"
+					src="/icons/testimonial.svg"
 					size={24}
 				/>
 				<MenuItem
