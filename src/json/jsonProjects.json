@@ -40,7 +40,7 @@
 
 	{
 		"title": "Debug et optimisation d'un site",
-		"imgSrc": "/photos/presP5.png",
+		"imgSrc": "/photos/presP5_85.webp",
 		"imgAlt": "Projet debug",
 		"technoIcons": [
 			{
@@ -85,7 +85,7 @@
 
 	{
 		"title": "Front-end React et Sass d'un site",
-		"imgSrc": "/photos/presP6.png",
+		"imgSrc": "/photos/presP6_85.webp",
 		"imgAlt": "Projet React",
 		"technoIcons": [
 			{
@@ -126,7 +126,7 @@
 
 	{
 		"title": "Back-end Express et MongoDB",
-		"imgSrc": "/photos/presP7.png",
+		"imgSrc": "/photos/presP7_85.webp",
 		"imgAlt": "Projet Back-end",
 		"technoIcons": [
 			{
