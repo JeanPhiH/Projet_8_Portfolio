@@ -28,9 +28,10 @@ export default function Projects() {
 						<div className="flex justify-center gap-3 bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500">
 							{project.technoIcons.map((techno) => (
 								<Image
-									key={techno.technoAlt}
+									key={techno.technoTitle}
 									src={techno.technoSrc}
-									alt={techno.technoAlt}
+									alt={`logo ${techno.technoTitle}`}
+									title={techno.technoTitle}
 									width={24}
 									height={24}
 								/>

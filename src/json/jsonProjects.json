@@ -5,15 +5,15 @@
 		"imgAlt": "Projet Javascript",
 		"technoIcons": [
 			{
-				"technoAlt": "logo html",
+				"technoTitle": "html",
 				"technoSrc": "/icons/html5.svg"
 			},
 			{
-				"technoAlt": "logo css",
+				"technoTitle": "css",
 				"technoSrc": "/icons/css3.svg"
 			},
 			{
-				"technoAlt": "logo javascript",
+				"technoTitle": "javascript",
 				"technoSrc": "/icons/javascript.svg"
 			}
 		],
@@ -44,15 +44,15 @@
 		"imgAlt": "Projet debug",
 		"technoIcons": [
 			{
-				"technoAlt": "logo SEO",
+				"technoTitle": "SEO",
 				"technoSrc": "/icons/seo.svg"
 			},
 			{
-				"technoAlt": "logo Lighhouse",
+				"technoTitle": "Lighhouse",
 				"technoSrc": "/icons/lighthouse.svg"
 			},
 			{
-				"technoAlt": "logo WAVE",
+				"technoTitle": "WAVE",
 				"technoSrc": "/icons/WAVE2.png"
 			}
 		],
@@ -89,11 +89,11 @@
 		"imgAlt": "Projet React",
 		"technoIcons": [
 			{
-				"technoAlt": "logo React",
+				"technoTitle": "React",
 				"technoSrc": "/icons/react.svg"
 			},
 			{
-				"technoAlt": "logo Sass",
+				"technoTitle": "Sass",
 				"technoSrc": "/icons/sass.svg"
 			}
 		],
@@ -130,15 +130,15 @@
 		"imgAlt": "Projet Back-end",
 		"technoIcons": [
 			{
-				"technoAlt": "logo Node JS",
+				"technoTitle": "NodeJS",
 				"technoSrc": "/icons/node-js.svg"
 			},
 			{
-				"technoAlt": "logo Express JS",
+				"technoTitle": "Express JS",
 				"technoSrc": "/icons/express.svg"
 			},
 			{
-				"technoAlt": "logo MongoDB",
+				"technoTitle": "MongoDB",
 				"technoSrc": "/icons/mongodb.svg"
 			}
 		],

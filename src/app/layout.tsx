@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ubuntu.variable} ${ubuntu_mono.variable} ${galindo.variable}`}>
-      <body className="h-screen">
+      <body className="h-screen font-ubuntu">
 				<Header />
 					<main>
 						{children}

@@ -1,32 +1,23 @@
-"use client" 
-import { useState } from "react";
-import {createPost} from "@/actions/createPost";
+import { createPost } from "@/actions/createPost";
+import MsgList from "@/components/MsgList";
+import { Suspense } from "react";
+import connectDB from "@/lib/db";
 
 export default function Testimonials() {
-	const [submitted, setSubmitted] = useState(false);
-
+	connectDB();
 	return (
-		<section className="flex flex-col items-center">
-			<h2>Laissez votre avis</h2>
-			<p>Vous m’avez cotoyé professionnellement et ce contact vous a plu ?</p>
-			<p className="mb-3">
-				Alors dites-le ici et votre message permettra peut-ête de convaincre un futur recruteur.
-			</p>
-			{submitted ? (
-				<div className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg">
-					<p className="w-full p-2 bg-dark text-light rounded-lg text-center">
-						Merci pour votre message !
-						<br />
-						Il sera affiché après validation de ma part.
-					</p>
-				</div>
-			) : (
+		<>
+			<section className="flex flex-col items-center">
+				<h2>Laissez votre avis</h2>
+				<p>Vous m’avez cotoyé professionnellement et ce contact vous a plu ?</p>
+				<p className="mb-3">
+					Alors dites-le ici et votre message permettra peut-ête de convaincre
+					un futur recruteur.
+				</p>
+
 				<form
 					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
-					action={async (formData) => {
-						await createPost(formData);
-						setSubmitted(true);
-					}}
+					action={createPost}
 				>
 					<label htmlFor="name">Nom complet</label>
 					<input
@@ -61,7 +52,15 @@ export default function Testimonials() {
 						Envoyer
 					</button>
 				</form>
-			)}
-		</section>
+			</section>
+			<section>
+				<h2>Vos messages</h2>
+				{/* <Suspense fallback="Loading..."> */}
+				
+					<MsgList />
+				
+				{/* </Suspense> */}
+			</section>
+		</>
 	);
 }
