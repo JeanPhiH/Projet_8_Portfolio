@@ -55,11 +55,11 @@ export default function Testimonials() {
 			</section>
 			<section>
 				<h2>Vos messages</h2>
-				{/* <Suspense fallback="Loading..."> */}
+				<Suspense fallback="Loading...">
 				
 					<MsgList />
 				
-				{/* </Suspense> */}
+				</Suspense>
 			</section>
 		</>
 	);
