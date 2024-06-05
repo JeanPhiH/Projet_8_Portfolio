@@ -3,11 +3,12 @@
 import MenuItem from "./MenuItem";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 export default function Header() {
 	// Display burger menu by changing nav style
 	const defaultNavStyle =
-		"hidden fixed bg-dark rounded-full shadow-lg shadow-light/50 md:shadow-none z-10 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
+		"hidden fixed bg-dark dark:bg-light rounded-full shadow-lg shadow-light/50 dark:shadow-dark/50 md:shadow-none z-10 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
 	const [navStyle, setNavStyle] = useState(defaultNavStyle);
 
 	const burgerRef = useRef<HTMLImageElement | null>(null);
@@ -35,7 +36,7 @@ export default function Header() {
 	}, [navStyle]);
 
 	return (
-		<header className="md:fixed top-0 w-full h-11 md:h-auto z-50 flex bg-dark justify-between px-4 items-center border-b-2 border-b-light">
+		<header className="md:fixed top-0 w-full h-11 md:h-auto z-50 flex bg-dark dark:bg-light justify-between px-4 items-center border-b-2 border-b-light dark:border-b-dark">
 			<h1>jphindev</h1>
 			<nav className={navStyle}>
 				<MenuItem
@@ -80,6 +81,7 @@ export default function Header() {
 					src="/icons/linkedin.svg"
 					size={24}
 				/>
+				<ToggleDarkMode />
 			</nav>
 			<Image
 				ref={burgerRef}

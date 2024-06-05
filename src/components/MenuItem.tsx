@@ -21,15 +21,15 @@ export default function MenuItem({
 			target={target}
 			className="flex flex-col items-center justify-center w-16 h-16  relative group p-1 md:p-2"
 		>
-			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 group-hover:shadow-none border-highlight md:group-hover:border-y-2 md:group-hover:animate-spin bg-highlight/10"></div>
+			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 group-hover:shadow-none border-highlight md:group-hover:border-y-2 md:group-hover:animate-spin bg-highlight/10 dark:bg-dark/75"></div>
 			<Image
-				className="text-light relative z-5"
+				className="relative z-5"
 				src={src}
 				alt={`Lien vers ${title}`}
 				width={size}
 				height={size}
 			/>
-			<span className="text-sm">{title}</span>
+			<span className="z-10 text-sm dark:text-light">{title}</span>
 		</Link>
 	);
 }
