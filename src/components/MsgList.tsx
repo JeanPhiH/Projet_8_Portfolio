@@ -1,5 +1,4 @@
 import Post from "@/models/post";
-import Link from "next/link";
 import MenuItem from "./MenuItem";
 
 export default async function MsgList() {
@@ -9,19 +8,28 @@ export default async function MsgList() {
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
 			{posts.map((post) => (
-				<div key={post.id} className="p-3 border-2 border-double border-light dark:border-dark rounde-lg flex gap-5">
-					<div className="flex flex-col gap-2 items-center">
-						<h3 className="font-galindo">{post.name}</h3>
+				<div
+					key={post.id}
+					className="h-48 p-3 dark:border-4 dark:border-double dark:border-dark rounded-lg flex gap-5 shadow-inner dark:shadow-lg shadow-light/75 dark:shadow-dark/50"
+				>
+					<div className="flex-none w-40 flex flex-col justify-between items-center">
+						<div>
+							<h3 className="font-galindo">{post.name}</h3>
+							<h3 className="font-galindo">{post.lastname}</h3>
+						</div>
 						<MenuItem
-							title="LinkedIn"
+							title="LkdIn"
 							href={post.linkedin}
 							target="_blank"
 							src="/icons/linkedin.svg"
 							size={24}
 						/>
 					</div>
-					<p>{post.message}
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae suscipit harum eius atque illum beatae necessitatibus officiis laborum. Quod, aut?
+					<p>
+						{post.message}
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+						suscipit harum eius atque illum beatae necessitatibus officiis
+						laborum. Quod, aut?
 					</p>
 				</div>
 			))}

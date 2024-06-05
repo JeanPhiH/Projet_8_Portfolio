@@ -8,7 +8,7 @@ import ToggleDarkMode from "./ToggleDarkMode";
 export default function Header() {
 	// Display burger menu by changing nav style
 	const defaultNavStyle =
-		"hidden fixed bg-dark dark:bg-light/75 rounded-full shadow-lg shadow-light/50 dark:shadow-dark/50 md:shadow-none z-10 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
+		"hidden fixed bg-dark dark:bg-light rounded-full shadow-lg shadow-light/50 dark:shadow-dark/50 md:shadow-none z-10 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
 	const [navStyle, setNavStyle] = useState(defaultNavStyle);
 
 	const burgerRef = useRef<HTMLImageElement | null>(null);
@@ -36,7 +36,7 @@ export default function Header() {
 	}, [navStyle]);
 
 	return (
-		<header className="md:fixed top-0 w-full h-11 md:h-auto z-50 flex bg-dark dark:bg-light/75 justify-between px-4 items-center border-b-2 border-b-light dark:border-b-dark">
+		<header className="md:fixed top-0 w-full h-11 md:h-auto z-50 flex bg-dark dark:bg-light justify-between px-4 items-center border-b-2 border-b-light dark:border-b-dark">
 			<h1>jphindev</h1>
 			<nav className={navStyle}>
 				<MenuItem
@@ -89,7 +89,7 @@ export default function Header() {
 				alt="Menu Burger"
 				width={40}
 				height={40}
-				className="fixed right-0 top-0 z-10 bg-dark dark:bg-light/75 md:static md:hidden"
+				className="fixed right-0 top-0 z-10 bg-dark dark:bg-dark/75 md:static md:hidden"
 				onClick={displayBurger}
 			/>
 		</header>

@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 export default function Technos() {
 	return (
-		<section className="max-w-none bg-[url('/photos/space.webp')] bg-fixed p-10 md:rounded-xl flex flex-col justify-center items-center md:mx-auto shadow-light/50 dark:shadow-dark/50">
+		<section className="max-w-none bg-[url('/photos/space.webp')] bg-fixed p-10  flex flex-col justify-center items-center md:mx-auto shadow-light/50 dark:shadow-dark/50">
 			<h2>Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
 				<div className="absolute animate-orbitxn">
@@ -63,7 +63,7 @@ export default function Technos() {
 						</text>
 					</svg>
 				</div>
-				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark h-16 w-16">
+				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark dark:bg-dark/75 h-16 w-16">
 					<MenuItem
 						title="Github"
 						href="https://github.com/JeanPhiH/Projet_8_Portfolio"

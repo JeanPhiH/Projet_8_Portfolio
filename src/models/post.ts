@@ -5,6 +5,10 @@ const postSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	lastname: {
+		type: String,
+		required: true,
+	},
 	linkedin: {
 		type: String,
 		required: true,
