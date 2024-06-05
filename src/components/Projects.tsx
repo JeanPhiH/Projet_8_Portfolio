@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import jsonProjects from "@/json/jsonProjects.json";
 import MenuItem from "./MenuItem";
 
@@ -12,7 +11,7 @@ export default function Projects() {
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
-						className="relative group/project flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-xl border-double border-light"
+						className="relative group/project flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[440px] border-4 rounded-xl border-double border-light dark:border-dark"
 					>
 						<Image
 							src={project.imgSrc}
@@ -22,10 +21,10 @@ export default function Projects() {
 							height={432}
 							className="lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover/project:scale-[0.33] duration-500 origin-top-left"
 						/>
-						<h3 className="bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
+						<h3 className="bg-dark/75 dark:bg-light/75 w-full lg:w-[150px] p-3 lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500">
+						<div className="flex justify-center gap-3 bg-dark/75 dark:bg-dark/75 w-full lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500 ">
 							{project.technoIcons.map((techno) => (
 								<Image
 									key={techno.technoTitle}
@@ -37,7 +36,7 @@ export default function Projects() {
 								/>
 							))}
 						</div>
-						<div className="flex flex-col justify-center items-center gap-3 bg-dark/75 p-1 lg:p-3 absolute right-0 top-0">
+						<div className="flex flex-col justify-center items-center gap-3 bg-dark/75 dark:bg-transparent p-1 lg:p-3 absolute right-0 top-0">
 							{project.linksIcons.map((link) => (
 								<MenuItem
 									key={link.linkAlt}

@@ -21,7 +21,7 @@ export default function MenuItem({
 			target={target}
 			className="flex flex-col items-center justify-center w-16 h-16  relative group p-1 md:p-2"
 		>
-			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 group-hover:shadow-none border-highlight md:group-hover:border-y-2 md:group-hover:animate-spin bg-highlight/10 dark:bg-dark/75"></div>
+			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 dark:shadow-dark/50 group-hover:shadow-none border-highlight dark:border-light md:group-hover:border-y-4 md:group-hover:animate-spin bg-light/10 dark:bg-dark/75"></div>
 			<Image
 				className="relative z-5"
 				src={src}

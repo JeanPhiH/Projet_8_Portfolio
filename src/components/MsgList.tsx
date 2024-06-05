@@ -9,7 +9,7 @@ export default async function MsgList() {
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
 			{posts.map((post) => (
-				<div key={post.id} className="p-3 border-2 border-double border-light rounde-lg flex gap-5">
+				<div key={post.id} className="p-3 border-2 border-double border-light dark:border-dark rounde-lg flex gap-5">
 					<div className="flex flex-col gap-2 items-center">
 						<h3 className="font-galindo">{post.name}</h3>
 						<MenuItem

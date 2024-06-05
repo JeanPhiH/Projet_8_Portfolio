@@ -23,8 +23,8 @@ export default function Contact() {
 				size={24}
 			/>
 			{submitted ? (
-				<div className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg">
-					<p className="w-full p-2 bg-dark text-light rounded-lg text-center">
+				<div className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 dark:bg-dark/25 rounded-lg">
+					<p className="w-full p-2 bg-dark dark:bg-light text-light dark:text-dark rounded-lg text-center">
 						Merci, votre message a été envoyé !
 						<br />
 						Je vous répondrais dès que possible.
@@ -32,7 +32,7 @@ export default function Contact() {
 				</div>
 			) : (
 				<form
-					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
+					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 dark:bg-dark/25 rounded-lg"
 					action={async (formData) => {
 						await sendEmail(formData);
 						setSubmitted(true);
@@ -60,7 +60,7 @@ export default function Contact() {
 					/>
 					<button
 						type="submit"
-						className="bg-light rounded-lg text-dark p-1 hover:border-2 border-highlight"
+						className="dark:text-light bg-light dark:bg-dark rounded-lg text-dark p-1 hover:border-2 border-highlight dark:border-highdark"
 					>
 						Envoyer
 					</button>

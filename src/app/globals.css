@@ -3,26 +3,26 @@
 @layer base {
 	h1,
 	h2 {
-		@apply font-bold text-highlight text-center;
+		@apply font-bold text-highlight dark:text-highdark text-center;
 	}
 	h1 {
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply text-2xl w-2/3 border-b-2 border-highlight mx-auto mb-10 font-ubuntumono;
+		@apply text-highlight dark:text-highdark text-2xl w-2/3 border-b-2 border-highlight dark:border-highdark mx-auto mb-10 font-ubuntumono;
 	}
 	h3 {
-		@apply text-lg text-highlight font-bold;
+		@apply text-lg text-highlight dark:text-highdark  font-bold;
 	}
 	h4 {
-		@apply text-highlight mt-4;
+		@apply text-highlight dark:text-highdark mt-4;
 	}
 	section {
 		@apply px-4 mt-32 max-w-screen-xl mx-auto;
 	}
 	input,
 	textarea {
-		@apply w-full p-2 bg-dark text-light rounded-lg focus:outline focus:outline-2 focus:outline-highlight hover:outline hover:outline-2  hover:outline-light;
+		@apply w-full p-2 bg-dark dark:bg-light text-light dark:text-dark rounded-lg focus:outline focus:outline-2 focus:outline-highlight dark:focus:outline-highdark hover:outline hover:outline-2  hover:outline-light dark:hover:outline-dark;
 	}
 }
 
@@ -34,15 +34,8 @@
 	--color-dark: 10 25 47;
 	--color-light: 255 229 204;
 	--color-highlight: 250 176 5;
+	--color-highdark: 29 144 151;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 html {
 	scroll-behavior: smooth;

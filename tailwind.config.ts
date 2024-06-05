@@ -14,6 +14,7 @@ const config: Config = {
 			'dark': 'rgb(var(--color-dark) / <alpha-value>)',
 			'light': 'rgb(var(--color-light) / <alpha-value>)',
       'highlight': 'rgb(var(--color-highlight) / <alpha-value>)',
+			'highdark': 'rgb(var(--color-highdark) / <alpha-value>)'
       
     },
     extend: {

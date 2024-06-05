@@ -1,7 +1,6 @@
 "use client"
-import { useState } from "react";
 
-const body = document.querySelector('body');
+import { useState } from "react";
 
 export default function ToggleDarkMode() {
 
@@ -10,12 +9,12 @@ export default function ToggleDarkMode() {
 	function toggleMode() {
 
 		if (mode === 'light') {
-			body?.classList.remove('light');
-			body?.classList.add('dark');
+			document.documentElement.classList.remove('light');
+			document.documentElement.classList.add('dark');
 			setMode('dark');
 		} else {
-			body?.classList.remove('dark');
-			body?.classList.add('light');
+			document.documentElement.classList.remove('dark');
+			document.documentElement.classList.add('light');
 			setMode('light');
 		}
 	}

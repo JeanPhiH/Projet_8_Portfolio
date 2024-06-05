@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import MenuItem from "./MenuItem";
 
 export default function RsCard({
@@ -18,7 +17,7 @@ export default function RsCard({
 	RsNote: string;
 }) {
 	return (
-		<div className="flex flex-col gap-2 items-center justify-between px-3 py-5 border-2 border-light w-52 h-[465px] rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light/50">
+		<div className="flex flex-col gap-2 items-center justify-between px-3 py-5 border-2 border-light dark:border-dark w-52 h-[465px] rounded-t-full rounded-b-full hover:shadow-lg hover:shadow-light/50 dark:hover:shadow-dark/50">
 			<Image src={RsIcon} alt={`logo ${RsName}`} width={24} height={24} />
 			<h3>{RsName}</h3>
 			<Image

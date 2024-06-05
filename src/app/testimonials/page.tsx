@@ -16,7 +16,7 @@ export default function Testimonials() {
 				</p>
 
 				<form
-					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 rounded-lg"
+					className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 dark:bg-dark/25 rounded-lg"
 					action={createPost}
 				>
 					<label htmlFor="name">Nom complet</label>
@@ -47,7 +47,7 @@ export default function Testimonials() {
 					/>
 					<button
 						type="submit"
-						className="bg-light rounded-lg text-dark p-1 hover:border-2 border-highlight"
+						className="bg-light dark:bg-dark rounded-lg text-dark p-1 hover:border-2 border-highlight dark:border-highdark"
 					>
 						Envoyer
 					</button>
