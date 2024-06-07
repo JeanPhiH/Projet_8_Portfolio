@@ -2,6 +2,22 @@ import { createPost } from "@/actions/createPost";
 import MsgList from "@/components/MsgList";
 import { Suspense } from "react";
 import connectDB from "@/lib/db";
+import type { Metadata } from "next";
+
+// METADATA
+export const metadata: Metadata = {
+	title: "Vos avis sur Jphindev",
+	description:
+		"Laissez votre avis sur moi si vous m'avez cotoyé professionnellement",
+	alternates: {
+		canonical: "/testimonials",
+	},
+	openGraph: {
+		title: "Vos avis sur Jphindev",
+		description: "Laissez votre avis sur moi si vous m'avez cotoyé professionnellement",
+		url: "https://projet-8-portfolio-gamma.vercel.app/testimonials",
+	},
+};
 
 export default function Testimonials() {
 	connectDB();
