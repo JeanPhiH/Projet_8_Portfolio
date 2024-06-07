@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply text-highlight dark:text-highdark text-2xl w-2/3 border-b-2 border-highlight dark:border-highdark mx-auto mb-10 font-ubuntumono;
+		@apply text-highlight dark:text-highdark text-2xl w-2/3 border-b-2 border-highlight dark:border-highdark mx-auto mb-10 font-galindo;
 	}
 	h3 {
 		@apply text-lg text-highlight dark:text-highdark  font-bold;
