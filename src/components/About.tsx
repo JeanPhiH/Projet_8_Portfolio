@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 export default function About() {
 	return (
 		<>
-			<section >
+			<section>
 				<h2>Qui suis-je ?</h2>
 				<div className="md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
 					{/* BIO */}
@@ -17,22 +17,22 @@ export default function About() {
 						<p>
 							J’ai étudié chez OpenClassrooms et j’y ai aimé l’importance
 							accordée à la{" "}
-							<span className="text-highlight dark:text-highdark">
+							<span>
 								pratique
 							</span>{" "}
 							et à l’
-							<span className="text-highlight dark:text-highdark">
+							<span>
 								autonomie
 							</span>
 							.
 						</p>
 						<p>
 							J’aime les distributions{" "}
-							<span className="text-highlight dark:text-highdark">Linux</span>,
+							<span>Linux</span>,
 							la logique{" "}
-							<span className="text-highlight dark:text-highdark">React</span>{" "}
+							<span>React</span>{" "}
 							et les{" "}
-							<span className="text-highlight dark:text-highdark">
+							<span>
 								animations CSS
 							</span>
 							.
@@ -40,14 +40,25 @@ export default function About() {
 						<p>
 							Je suis curieux de tout et aime les challenges qu’offre la vie.
 						</p>
-						<p className="mb-3">Mon CV est consultable ici:</p>
-						<MenuItem
-							title="CV"
-							href="/cv"
-							target="_blank"
-							src="/icons/cv.svg"
-							size={24}
-						/>
+						<p className="mb-3">
+							Mon CV et ma skill map sont consultables ici:
+						</p>
+						<div className="flex gap-3">
+							<MenuItem
+								title="CV"
+								href="/cv"
+								target="_blank"
+								src="/icons/cv.svg"
+								size={24}
+							/>
+							<MenuItem
+								title="Skills"
+								href="https://miro.com/app/board/uXjVK-F7nmo=/?share_link_id=715896338711"
+								target="_blank"
+								src="/icons/mindmap.svg"
+								size={24}
+							/>
+						</div>
 						<p className="mt-4">Ma maxime du moment: </p>
 						<blockquote className="italic">
 							C’est dans la contrainte que nait l’inspiration.

@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply text-highlight dark:text-highdark text-2xl w-2/3 border-b-2 border-highlight dark:border-highdark mx-auto mb-10 font-galindo;
+		@apply text-light text-2xl w-fit p-6 shadow-inner shadow-light rounded-full dark:border-highdark mx-auto mb-10 font-galindo tracking-wider bg-gradient-to-br from-light/30 to-dark/30 dark:from-dark dark:to-dark/30;
 	}
 	h3 {
 		@apply text-lg text-highlight dark:text-highdark  font-bold;
@@ -24,6 +24,9 @@
 	textarea {
 		@apply w-full p-2 bg-dark dark:bg-light text-light dark:text-dark rounded-lg focus:outline focus:outline-2 focus:outline-highlight dark:focus:outline-highdark hover:outline hover:outline-2  hover:outline-light dark:hover:outline-dark;
 	}
+	span {
+		@apply text-highlight dark:text-highdark;
+	}
 }
 
 @tailwind components;
@@ -34,7 +37,7 @@
 	--color-dark: 10 25 47;
 	--color-light: 255 229 204;
 	--color-highlight: 250 176 5;
-	--color-highdark: 29 144 151;
+	--color-highdark: 192 54 140;
 }
 
 html {

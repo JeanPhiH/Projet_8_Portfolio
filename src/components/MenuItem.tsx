@@ -19,9 +19,9 @@ export default function MenuItem({
 			key={title}
 			href={href}
 			target={target}
-			className="flex flex-col items-center justify-center w-16 h-16  relative group p-1 md:p-2"
+			className="flex flex-col items-center justify-center w-[72px] h-[72px]  relative group  md:p-2"
 		>
-			<div className="rounded-full absolute inset-0 shadow-inner shadow-light/50 dark:shadow-dark/50 group-hover:shadow-none border-highlight dark:border-light md:group-hover:border-y-4 md:group-hover:animate-spin bg-light/10 dark:bg-dark/75"></div>
+			<div className="rounded-full absolute inset-0 shadow-inner shadow-light  group-hover:shadow-none border-highlight dark:border-light md:group-hover:border-y-4 md:group-hover:animate-spin bg-dark"></div>
 			<Image
 				className="relative z-5"
 				src={src}
@@ -29,7 +29,7 @@ export default function MenuItem({
 				width={size}
 				height={size}
 			/>
-			<span className="z-10 text-sm dark:text-light">{title}</span>
+			<p className="z-10 text-sm dark:text-light">{title}</p>
 		</Link>
 	);
 }

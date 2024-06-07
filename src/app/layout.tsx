@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 		"tailwindcss",
 	],
 	creator: "Jphindev",
+	metadataBase: new URL('https://projet-8-portfolio-gamma.vercel.app/'),
 	alternates: {
-    canonical: '/', // We have one Base URL, so adding just "/"
+    canonical: '/',
   },
 	openGraph: {
 		title: "Jphindev’s portfolio",
@@ -49,7 +50,7 @@ export default function RootLayout({
 			lang="fr"
 			className={`${ubuntu.variable} ${ubuntu_mono.variable} ${galindo.variable}`}
 		>
-			<body className="h-screen mx-auto font-ubuntu text-light bg-dark dark:text-dark dark:bg-light/75">
+			<body className="h-screen mx-auto font-ubuntu text-lg text-light bg-dark dark:text-dark dark:bg-light/50">
 				<Header />
 				<main>{children}</main>
 			</body>
