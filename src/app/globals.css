@@ -12,7 +12,7 @@
 		@apply text-light text-2xl w-fit p-6 shadow-inner shadow-light rounded-full dark:border-highdark mx-auto mb-10 font-galindo tracking-wider bg-gradient-to-br from-light/30 to-dark/30 dark:from-dark dark:to-dark/30;
 	}
 	h3 {
-		@apply text-lg text-highlight dark:text-highdark  font-bold;
+		@apply text-lg text-light dark:text-dark font-bold;
 	}
 	h4 {
 		@apply text-highlight dark:text-highdark mt-4;

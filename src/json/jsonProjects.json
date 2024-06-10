@@ -27,6 +27,7 @@
 		],
 		"mission": "Créer le front-end dynamique d'un site portfolio d'une architecte d'intérieur",
 		"constraints": "Utilisation des langages html, CSS et Javascript seuls",
+		"issues": "Gestion du token d'authentification: Pour autoriser l'ajout d’un nouveau travail, il fallait enregistrer le token dans un sessionstorage puis le déclarer dans le header de la requête lors du fetch post.",
 		"skills": [
 			{ "skill": "Création de modales" },
 			{ "skill": "Communication avec un back-end" },
@@ -72,6 +73,7 @@
 		],
 		"mission": "Débuguer et optimiser un site web pour le rendre plus rapide, plus performant et mieux référencé grâce au SEO",
 		"constraints": "Avoir un score Lighthouse supérieur à 95% pour desktop et mobile",
+		"issues": "Avoir un bon score lighthouse pour mobile: Résolu grâce à l’utilisation de la propriété srcset afin de charger des images plus petites pour l'affichage mobile.",
 		"skills": [
 			{ "skill": "SEO, résultats enrichis et metadonnées" },
 			{ "skill": "Compréhension de l'outil Lighthouse" },
@@ -113,6 +115,7 @@
 		],
 		"mission": "Créer le front-end d'un site de location immobilière",
 		"constraints": "Utiliser React JS et un langage Scss pour le style",
+		"issues": "Avoir des animations fluide pour les collapses: Résolu en changeant progressivment la taille de la div et la révélation du texte par l'utilisation de keyframes.",
 		"skills": [
 			{ "skill": "Logique des composants React" },
 			{ "skill": "Spécificités du langage Scss" },
@@ -152,6 +155,7 @@
 		],
 		"mission": "Créer le back-end d'un site de notation de livres",
 		"constraints": "Utiliser Express JS et une base de données MongoDB",
+		"issues": "Gestion de la sauvegarde d'images: Résolu en utilisant les middlewares Multer et sharp afin de sauvegarder des images optimisées.",
 		"skills": [
 			{ "skill": "Logique serveur, routes, middleware et controller" },
 			{ "skill": "Opérations CRUD" },

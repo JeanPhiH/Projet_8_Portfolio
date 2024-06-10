@@ -11,8 +11,8 @@ export default function Technos() {
 						className="w-10 animate-selfrotate"
 						src="/icons/nextjs-stroke.svg"
 						alt="Logo NextJS"
-						width={30}
-						height={30}
+						width={40}
+						height={40}
 					/>
 				</div>
 
@@ -21,8 +21,8 @@ export default function Technos() {
 						className="w-10 animate-selfrotate"
 						src="/icons/typescript-icon.svg"
 						alt="Logo TypeScript"
-						width={30}
-						height={30}
+						width={40}
+						height={40}
 					/>
 				</div>
 
@@ -31,8 +31,8 @@ export default function Technos() {
 						className="w-10 animate-selfrotate"
 						src="/icons/tailwind-css.svg"
 						alt="Logo TailwindCSS"
-						width={30}
-						height={30}
+						width={40}
+						height={27}
 					/>
 				</div>
 				<div className="absolute animate-orbityp">
@@ -40,8 +40,8 @@ export default function Technos() {
 						className="w-10 animate-selfrotate"
 						src="/icons/mongodb-icon.svg"
 						alt="Logo MongoDB"
-						width={30}
-						height={30}
+						width={40}
+						height={40}
 					/>
 				</div>
 				<div className="absolute">
@@ -69,7 +69,8 @@ export default function Technos() {
 						href="https://github.com/JeanPhiH/Projet_8_Portfolio"
 						target="_blank"
 						src="/icons/github.svg"
-						size={24}
+						width={24}
+						height={24}
 					/>
 				</div>
 			</div>

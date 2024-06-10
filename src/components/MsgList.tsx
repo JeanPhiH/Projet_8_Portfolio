@@ -22,7 +22,8 @@ export default async function MsgList() {
 							href={post.linkedin}
 							target="_blank"
 							src="/icons/linkedin.svg"
-							size={24}
+							width={24}
+							height={24}
 						/>
 					</div>
 					<p>

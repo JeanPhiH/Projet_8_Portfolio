@@ -43,42 +43,48 @@ export default function Navbar() {
 					href="/"
 					target="_self"
 					src="/icons/home.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="Projets"
 					href="/#projects"
 					target="_self"
 					src="/icons/project.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="Contact"
 					href="/#contact"
 					target="_self"
 					src="/icons/mail.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="Avis"
 					href="/testimonials"
 					target="_self"
 					src="/icons/testimonial.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="CV"
 					href="/docs/jphindev.pdf"
 					target="_blank"
 					src="/icons/cv.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="LinkedIn"
 					href="https://www.linkedin.com/in/jp-herfeld/"
 					target="_blank"
 					src="/icons/linkedin.svg"
-					size={24}
+					width={24}
+					height={27}
 				/>
 				<ToggleDarkMode />
 			</nav>

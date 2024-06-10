@@ -25,7 +25,7 @@ export default function RsCard({
 				src={RsPic}
 				alt={`image ${RsName}`}
 				width={175}
-				height={150}
+				height={144}
 			/>
 			<p className="text-center h-40">{RsNote}</p>
 			<div className="flex gap-3">
@@ -34,14 +34,16 @@ export default function RsCard({
 					href={RsLink}
 					target="_blank"
 					src="/icons/websitefilled.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 				<MenuItem
 					title="Youtube"
 					href={RsLinkYT}
 					target="_blank"
 					src="/icons/youtube.svg"
-					size={24}
+					width={24}
+					height={24}
 				/>
 			</div>
 		</div>

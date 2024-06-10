@@ -20,7 +20,8 @@ export default function Contact() {
 				href="https://www.linkedin.com/in/jp-herfeld/"
 				target="_blank"
 				src="/icons/linkedin.svg"
-				size={24}
+				width={24}
+				height={27}
 			/>
 			{submitted ? (
 				<div className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto flex flex-col items-center gap-2 bg-light/25 dark:bg-dark/25 rounded-lg">
@@ -48,7 +49,13 @@ export default function Contact() {
 						className=""
 					/>
 					<label htmlFor="email">Email</label>
-					<input id="email" type="email" name="email" placeholder="Email" required />
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Email"
+						required
+					/>
 					<label htmlFor="message">Message</label>
 					<textarea
 						id="message"
