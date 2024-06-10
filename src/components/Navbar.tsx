@@ -8,7 +8,7 @@ import ToggleDarkMode from "./ToggleDarkMode";
 export default function Navbar() {
 	// Display burger menu by changing nav style
 	const defaultNavStyle =
-		"hidden fixed bg-dark dark:bg-transparent rounded-full shadow-lg shadow-light/50 dark:shadow-dark/50 md:shadow-none z-10 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
+		"hidden fixed bg-dark dark:bg-light/50 rounded-full shadow-lg shadow-light/50 dark:shadow-dark/50 md:shadow-none z-50 top-11 right-0 md:static md:flex flex-col md:flex-row items-center justify-center gap-3 p-2";
 	const [navStyle, setNavStyle] = useState(defaultNavStyle);
 
 	const burgerRef = useRef<HTMLImageElement | null>(null);

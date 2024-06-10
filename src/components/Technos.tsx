@@ -8,7 +8,7 @@ export default function Technos() {
 			<div className="relative flex justify-center items-center h-96 w-full">
 				<div className="absolute animate-orbitxn">
 					<Image
-						className="lg:w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate"
 						src="/icons/nextjs-stroke.svg"
 						alt="Logo NextJS"
 						width={30}
@@ -18,7 +18,7 @@ export default function Technos() {
 
 				<div className="absolute animate-orbityn">
 					<Image
-						className="lg:w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate"
 						src="/icons/typescript-icon.svg"
 						alt="Logo TypeScript"
 						width={30}
@@ -28,7 +28,7 @@ export default function Technos() {
 
 				<div className="absolute animate-orbitxp">
 					<Image
-						className="lg:w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate"
 						src="/icons/tailwind-css.svg"
 						alt="Logo TailwindCSS"
 						width={30}
@@ -37,15 +37,15 @@ export default function Technos() {
 				</div>
 				<div className="absolute animate-orbityp">
 					<Image
-						className="lg:w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate"
 						src="/icons/mongodb-icon.svg"
 						alt="Logo MongoDB"
 						width={30}
 						height={30}
 					/>
 				</div>
-				<div className="absolute z-10">
-					<svg className=" rounded-full  w-[240px] h-[240px] -rotate-[30deg]">
+				<div className="absolute">
+					<svg className="rounded-full  w-[240px] h-[240px] -rotate-[40deg]">
 						<defs>
 							<path
 								id="circle"
@@ -63,7 +63,7 @@ export default function Technos() {
 						</text>
 					</svg>
 				</div>
-				<div className="flex justify-center items-center absolute z-10 rounded-full bg-dark dark:bg-dark/75 h-16 w-16">
+				<div className="flex justify-center">
 					<MenuItem
 						title="Github"
 						href="https://github.com/JeanPhiH/Projet_8_Portfolio"
