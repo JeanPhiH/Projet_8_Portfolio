@@ -26,11 +26,8 @@ export default async function MsgList() {
 							height={24}
 						/>
 					</div>
-					<p>
+					<p className="overflow-auto">
 						{post.message}
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-						suscipit harum eius atque illum beatae necessitatibus officiis
-						laborum. Quod, aut?
 					</p>
 				</div>
 			))}

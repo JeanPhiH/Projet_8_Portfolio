@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply flex items-center text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light rounded-full dark:border-highdark mx-auto mb-10 font-galindo tracking-wider bg-gradient-to-br from-light/30 to-dark/30 dark:from-dark dark:to-dark/30;
+		@apply flex items-center text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light rounded-full dark:border-highdark mx-auto mb-10 font-galindo tracking-wider bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-dark/30;
 	}
 	h3 {
 		@apply text-lg text-light dark:text-dark font-bold;

@@ -2,22 +2,24 @@
 
 import { useState } from "react";
 import { sendEmail } from "@/actions/sendEmail";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
+import FormButton from "./FormButton";
 
 export default function ContactForm() {
 	const [submitted, setSubmitted] = useState(false);
 	const initialState = {
-		message: '',
+		message: "",
 	};
 	const [formState, formAction] = useFormState(sendEmail, initialState);
+	const { pending } = useFormStatus();
 
 	return (
 		<>
 			<form
-				className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto h-[504px] mb-5 flex flex-col items-center gap-2 bg-gradient-to-br from-light/30 to-dark/30 dark:from-dark dark:to-dark/30 rounded-lg"
+				className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto h-[504px] mb-5 flex flex-col items-center gap-2 bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-dark/30 rounded-3xl shadow-inner shadow-light"
 				action={formAction}
 			>
-				<label htmlFor="name">Nom</label>
+				<label htmlFor="name">Nom complet</label>
 				<input
 					id="name"
 					type="text"
@@ -44,12 +46,7 @@ export default function ContactForm() {
 					required
 					className="h-52 italic"
 				/>
-				<button
-					type="submit"
-					className="bg-light dark:bg-dark dark:text-light rounded-lg text-dark p-1 hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark"
-				>
-					Envoyer
-				</button>
+				<FormButton />
 			</form>
 			{formState?.message && <p className="text-center">{formState.message}</p>}
 		</>

@@ -4,7 +4,7 @@ export default function Ressources() {
 	return (
 		<section className="">
 			<h2>Ressources</h2>
-			<p className="mt-5 w-4/5 mx-auto">
+			<p className="mt-5 w-[90%] mx-auto">
 				Voici les sites ou vidéos qui m’ont aidé et m’aident à me former. Les
 				explications y sont claires et permettent de progresser plus facilement
 				sur certains concepts.

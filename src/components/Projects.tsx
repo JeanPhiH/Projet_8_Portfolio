@@ -11,7 +11,7 @@ export default function Projects() {
 				{jsonProjects.map((project) => (
 					<div
 						key={project.title}
-						className="relative group/project flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[500px] rounded-xl shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 lg:shadow-none lg:dark:shadow-none lg:hover:shadow-inner lg:dark:hover:shadow-lg lg:hover:shadow-light lg:dark:hover:shadow-dark/50"
+						className="relative group/project flex flex-col lg:flex-row mt-5 w-full max-w-[960px] lg:h-[500px] rounded-3xl overflow-hidden shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 lg:shadow-none lg:dark:shadow-none lg:hover:shadow-inner lg:dark:hover:shadow-lg lg:hover:shadow-light lg:dark:hover:shadow-dark/50"
 					>
 						<Image
 							src={project.imgSrc}
@@ -19,12 +19,12 @@ export default function Projects() {
 							quality={85}
 							width={952}
 							height={492}
-							className="rounded-xl lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover/project:scale-[0.33] duration-500 origin-top-left"
+							className="lg:rounded-3xl lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover/project:scale-[0.33] duration-500 origin-top-left"
 						/>
-						<h3 className="bg-dark/75 text-light w-full lg:w-[150px] p-3 lg:rounded-xl lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
+						<h3 className="bg-dark/75 text-light w-[90%] mx-auto lg:w-[150px] p-3 lg:rounded-xl lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 bg-dark/75 lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500  lg:rounded-full">
+						<div className="flex justify-center gap-3 w-[90%] mx-auto bg-dark/75 lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500  lg:rounded-full">
 							{project.technoIcons.map((techno) => (
 								<Image
 									key={techno.technoTitle}

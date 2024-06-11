@@ -1,13 +1,15 @@
 "use client";
 
 import { createPost } from "@/actions/createPost";
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
+import FormButton from "./FormButton";
 
 export default function TestimonialForm() {
 	const initialState = {
 		message: "",
 	};
 	const [formState, formAction] = useFormState(createPost, initialState);
+
 	return (
 		<>
 			<form
@@ -52,12 +54,7 @@ export default function TestimonialForm() {
 						required
 						className="h-52"
 					/>
-					<button
-						type="submit"
-						className="bg-light dark:bg-dark dark:text-light rounded-lg text-dark p-1 hover:bg-dark hover:text-light dark:hover:bg-light dark:hover:text-dark"
-					>
-						Envoyer
-					</button>
+					<FormButton />
 				</div>
 			</form>
 			{formState?.message && <p className="text-center">{formState.message}</p>}
