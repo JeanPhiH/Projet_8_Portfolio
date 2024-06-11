@@ -4,10 +4,18 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async (formData: FormData) => {
+export async function sendEmail(
+	currentState: { message: string },
+	formData: FormData
+) {
 	const name = formData.get("name");
 	const email = formData.get("email");
 	const message = formData.get("message");
+	const regexName =
+		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s-]+$/;
+	const regexMessage =
+		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s.,!?'"()-]*$/;
+	const regexMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$/;
 
 	if (
 		!name ||
@@ -17,7 +25,25 @@ export const sendEmail = async (formData: FormData) => {
 		typeof email !== "string" ||
 		typeof message !== "string"
 	) {
-		throw new Error("Missing fields");
+		return { message: "Remplissez correctement tous les champs" };
+	}
+	if (!regexName.test(name as string)) {
+		return {
+			message:
+				"Champs de texte: lettres, accents, espaces ou tirets acceptés. Pas de chiffres !",
+		};
+	}
+	if (!regexMessage.test(message as string)) {
+		return {
+			message:
+				"Champs de texte: lettres, accents, espaces, chiffres ou tirets acceptés.",
+		};
+	}
+	if (!regexMail.test(email as string)) {
+		return {
+			message:
+				"Adresse mail non valide.",
+		};
 	}
 
 	try {
@@ -33,8 +59,8 @@ export const sendEmail = async (formData: FormData) => {
 			return error;
 		}
 
-		return data;
+		return {message: "Merci pour votre message, je vous répondrais dès que possible.",}
 	} catch (error) {
 		return error;
 	}
-};
+}

@@ -17,12 +17,16 @@ export async function createPost(
 	const regexName =
 		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s-]+$/;
 	const regexLinkedin = /^(https?:\/\/)?(www\.)?linkedin\.com\/.*/;
+	const regexMessage = /^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s.,!?'"()-]*$/;
 
 	if (!name || !lastname || !linkedin || !message) {
 		return { message: "Remplissez tous les champs" };
 	}
 	if (!regexName.test(name as string) || !regexName.test(lastname as string)) {
-		return { message: "Nom et Prénom: lettres, accents, espaces ou tirets." };
+		return { message: "Champs de texte: lettres, accents, espaces ou tirets acceptés." };
+	}
+	if (!regexMessage.test(message as string)) {
+		return { message: "Le message n'est pas au bon format" };
 	}
 	if (!regexLinkedin.test(linkedin as string)) {
 		return { message: "Le lien LinkedIn n'est pas au bon format" };

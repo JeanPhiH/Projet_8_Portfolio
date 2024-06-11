@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 export default async function MsgList() {
 	await new Promise((resolve) => setTimeout(resolve, 1000));
-	const posts = await Post.find();
+	const posts = await Post.find().sort({ _id: -1 });
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
