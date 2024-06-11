@@ -6,16 +6,16 @@ export default async function MsgList() {
 	const posts = await Post.find().sort({ _id: -1 });
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+		<div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
 			{posts.map((post) => (
 				<div
 					key={post.id}
-					className="h-48 p-3 dark:border-4 dark:border-double dark:border-dark rounded-lg flex gap-5 shadow-inner dark:shadow-lg shadow-light/75 dark:shadow-dark/50"
+					className="h-48 p-3 rounded-3xl flex gap-5  shadow-light dark:shadow-dark shadow-[0px_0px_10px_5px]"
 				>
-					<div className="flex-none w-40 flex flex-col justify-between items-center">
+					<div className="flex-none w-40 flex flex-col justify-between items-center py-2">
 						<div>
-							<h3 className="font-galindo">{post.name}</h3>
-							<h3 className="font-galindo">{post.lastname}</h3>
+							<h3 className="font-galindo text-highlight dark:text-highdark">{post.name}</h3>
+							<h3 className="font-galindo text-highlight dark:text-highdark">{post.lastname}</h3>
 						</div>
 						<MenuItem
 							title="LkdIn"
@@ -26,7 +26,7 @@ export default async function MsgList() {
 							height={24}
 						/>
 					</div>
-					<p className="overflow-auto">
+					<p className="overflow-auto shadow-inner shadow-light dark:shadow-dark w-full rounded-3xl p-3 italic">
 						{post.message}
 					</p>
 				</div>

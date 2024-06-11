@@ -1,4 +1,3 @@
-import { createPost } from "@/actions/createPost";
 import MsgList from "@/components/MsgList";
 import { Suspense } from "react";
 import connectDB from "@/lib/db";
@@ -28,8 +27,8 @@ export default function Testimonials() {
 		<>
 			<section className="">
 				<h2>Laissez votre avis</h2>
-				<p>Vous m’avez cotoyé professionnellement et ce contact vous a plu ?</p>
-				<p className="mb-3">
+				<p className="text-center">Vous m’avez cotoyé professionnellement et ce contact vous a plu ?</p>
+				<p className="text-center">
 					Alors dites-le ici et votre message permettra peut-ête de convaincre
 					un futur recruteur.
 				</p>

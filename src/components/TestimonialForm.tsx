@@ -13,7 +13,7 @@ export default function TestimonialForm() {
 	return (
 		<>
 			<form
-				className="mt-5 sm:w-2/3 lg:w-1/2 p-5 mx-auto flex items-start gap-5 bg-light/25 dark:bg-dark/25 rounded-lg"
+				className="mt-5 sm:w-2/3 lg:w-1/2 p-5 mx-auto flex flex-col md:flex-row md:items-start gap-5 rounded-3xl border-8 border-double border-highlight dark:border-highdark"
 				action={formAction}
 			>
 				<div className="flex flex-col gap-2">
@@ -22,9 +22,9 @@ export default function TestimonialForm() {
 						id="name"
 						type="text"
 						name="name"
-						placeholder="Prénom"
+						placeholder="Chuck"
 						required
-						className=""
+						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
 					<label htmlFor="lastname">Nom</label>
 					<input
@@ -33,7 +33,7 @@ export default function TestimonialForm() {
 						name="lastname"
 						placeholder="Nom"
 						required
-						className=""
+						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
 					<label htmlFor="linkedin">Lien LinkedIn</label>
 					<input
@@ -42,6 +42,7 @@ export default function TestimonialForm() {
 						name="linkedin"
 						placeholder="https://www.linkedin.com/"
 						required
+						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
 				</div>
 				<div>
@@ -52,7 +53,7 @@ export default function TestimonialForm() {
 						placeholder="Votre message"
 						maxLength={5000}
 						required
-						className="h-52"
+						className="h-52 shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
 					<FormButton />
 				</div>

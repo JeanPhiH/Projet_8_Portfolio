@@ -23,15 +23,15 @@ export default function MenuItem({
 			target={target}
 			className="flex flex-col items-center justify-center w-[72px] h-[72px]  relative group  md:p-2"
 		>
-			<div className="rounded-full absolute inset-0 shadow-inner shadow-light group-hover:shadow-none border-highlight dark:border-light md:group-hover:border-y-4 md:group-hover:animate-spin bg-dark bg-gradient-to-br from-light/15 to-dark"></div>
+			<div className="rounded-full absolute inset-0 shadow-inner shadow-light dark:shadow-dark group-hover:shadow-none border-highlight dark:border-highdark md:group-hover:border-y-4 md:group-hover:animate-spin bg-dark dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-vanilla/50 dark:to-transparent"></div>
 			<Image
-				className="relative"
+				className="relative dark:invert"
 				src={src}
 				alt={`Lien vers ${title}`}
 				width={width}
 				height={height}
 			/>
-			<p className="z-10 text-sm dark:text-light">{title}</p>
+			<p className="z-10 text-sm dark:text-light dark:shadow-dark dark:invert">{title}</p>
 		</Link>
 	);
 }

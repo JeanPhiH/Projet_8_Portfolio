@@ -21,10 +21,10 @@ export default function Projects() {
 							height={492}
 							className="lg:rounded-3xl lg:absolute object-cover w-full h-[250px] lg:h-full lg:group-hover/project:scale-[0.33] duration-500 origin-top-left"
 						/>
-						<h3 className="bg-dark/75 text-light w-[90%] mx-auto lg:w-[150px] p-3 lg:rounded-xl lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
+						<h3 className="bg-dark/75 dark:bg-light/75 text-light dark:text-dark w-[90%] mx-auto lg:w-[150px] p-3 lg:rounded-xl lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 w-[90%] mx-auto bg-dark/75 lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500  lg:rounded-full">
+						<div className="flex justify-center gap-3 w-[90%] mx-auto bg-dark/75 dark:bg-light/75 lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500  lg:rounded-full">
 							{project.technoIcons.map((techno) => (
 								<Image
 									key={techno.technoTitle}
@@ -33,6 +33,7 @@ export default function Projects() {
 									title={techno.technoTitle}
 									width={24}
 									height={24}
+									className="dark:invert"
 								/>
 							))}
 						</div>

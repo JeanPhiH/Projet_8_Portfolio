@@ -21,8 +21,8 @@ export default function ToggleDarkMode() {
 	}
 
 	return <div className="flex items-center">
-		<button onClick={toggleMode} className="p-2 rounded-full dark:bg-dark/75">
-			<Image src="/icons/theme-light-dark.svg" alt="Dark / Light mode" width={24} height={24} />
+		<button onClick={toggleMode} className="p-2">
+			<Image src="/icons/theme-light-dark.svg" alt="Dark / Light mode" title="Dark / Light" width={40} height={40} className="dark:invert"/>
 		</button>
 	</div>;
 }

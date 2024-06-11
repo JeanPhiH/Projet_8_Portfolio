@@ -50,7 +50,7 @@ export default function RootLayout({
 			lang="fr"
 			className={`${ubuntu.variable} ${ubuntu_mono.variable} ${galindo.variable}`}
 		>
-			<body className="h-screen mx-auto font-ubuntu text-lg text-light bg-dark dark:text-dark dark:bg-light/50">
+			<body className="h-screen mx-auto font-ubuntu text-lg text-light bg-dark dark:text-dark dark:bg-light/30">
 				<Header />
 				<main>{children}</main>
 			</body>
