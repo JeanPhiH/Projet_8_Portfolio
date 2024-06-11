@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function sendEmail(
 	currentState: { message: string },
 	formData: FormData
-) {
+): Promise<any> {
 	const name = formData.get("name");
 	const email = formData.get("email");
 	const message = formData.get("message");
@@ -41,8 +41,7 @@ export async function sendEmail(
 	}
 	if (!regexMail.test(email as string)) {
 		return {
-			message:
-				"Adresse mail non valide.",
+			message: "Adresse mail non valide.",
 		};
 	}
 
@@ -59,7 +58,9 @@ export async function sendEmail(
 			return error;
 		}
 
-		return {message: "Merci pour votre message, je vous répondrais dès que possible.",}
+		return {
+			message: "Merci pour votre message, je vous répondrais dès que possible.",
+		};
 	} catch (error) {
 		return error;
 	}

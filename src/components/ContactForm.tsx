@@ -7,7 +7,7 @@ import { useFormState } from "react-dom";
 export default function ContactForm() {
 	const [submitted, setSubmitted] = useState(false);
 	const initialState = {
-		message: "",
+		message: '',
 	};
 	const [formState, formAction] = useFormState(sendEmail, initialState);
 
