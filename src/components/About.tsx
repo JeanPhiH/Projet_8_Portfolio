@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MenuItem from "./MenuItem";
+import Link from "next/link";
 
 export default function About() {
 	return (
@@ -63,14 +64,21 @@ export default function About() {
 						</div>
 						<p className="mt-4">Ma maxime du moment: </p>
 						<blockquote className="italic">
-						&quot; C’est dans la contrainte que nait l’inspiration. &quot;
+							&quot; C’est dans la contrainte que nait l’inspiration. &quot;
 						</blockquote>
 					</article>
 
 					{/* PHOTOS */}
 					<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
 						<p className="italic text-center lg:absolute left-4 top-5 lg:w-1/2">
-							J’écris, anime et enregistre des sessions JDR, la dernière en date
+							J’écris, anime et enregistre des sessions JDR,{" "}
+							<Link
+								href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
+								target="_blank"
+								className="text-highlight dark:text-highdark underline"
+							>
+								la dernière en date
+							</Link>{" "}
 							se déroule dans l’univers des backrooms.
 						</p>
 						<div className="frametl absolute rounded-tl-xl overflow-hidden">

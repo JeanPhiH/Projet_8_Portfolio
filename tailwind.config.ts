@@ -28,6 +28,12 @@ const config: Config = {
 					"8%": { transform: "rotate(-0.5deg)" },
 					"100%": { transform: "rotate(-0.5deg)" },
 				},
+				madspin: {
+					"0%": { transform: "rotate(0deg)" },
+					"40%": { transform: "rotate(90deg)" },
+					"60%": { transform: "rotate(270deg)" },
+					"100%": { transform: "rotate(360deg)" },
+				},
 				orbitxn: {
 					"0%": { transform: "rotate(0deg) translateX(-160px)" },
 					"100%": { transform: "rotate(360deg) translateX(-160px)" },
@@ -57,6 +63,7 @@ const config: Config = {
 				orbitxn: "orbitxn 20s linear infinite",
 				orbitxp: "orbitxp 20s linear infinite",
 				selfrotate: "selfrotate 20s linear infinite",
+				madspin: "madspin 1s linear infinite",
 			},
 			fontFamily: {
 				ubuntu: ["var(--font-ubuntu)", "sans-serif"],
