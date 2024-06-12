@@ -71,24 +71,32 @@ export default function About() {
 					{/* PHOTOS */}
 					<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
 						<p className="italic text-center lg:absolute left-4 top-5 lg:w-1/2">
-							J’écris, anime et enregistre des sessions JDR,{" "}
+							J’écris, anime et enregistre des sessions JDR, notamment dans
+							l’univers des{" "}
+							<span>
+								<Link
+									href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
+									target="_blank"
+									className="underline"
+								>
+									backrooms
+								</Link>
+							</span>
+							.
+						</p>
+						<div className="frametl absolute rounded-tl-xl overflow-hidden">
 							<Link
 								href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
 								target="_blank"
-								className="text-highlight dark:text-highdark underline z-10"
 							>
-								la dernière en date
-							</Link>{" "}
-							se déroule dans l’univers des backrooms.
-						</p>
-						<div className="frametl absolute rounded-tl-xl overflow-hidden">
-							<Image
-								className="object-cover h-full"
-								src="/photos/jdrcut3.webp"
-								alt="Landscape"
-								width={400}
-								height={182}
-							/>
+								<Image
+									className="object-cover h-full"
+									src="/photos/jdrcut3.webp"
+									alt="Landscape"
+									width={400}
+									height={182}
+								/>
+							</Link>
 						</div>
 						<div className="framer absolute top-[96px] lg:top-3 right-0 ">
 							<Image
