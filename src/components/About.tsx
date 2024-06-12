@@ -10,7 +10,7 @@ export default function About() {
 				<h2>Qui suis-je ?</h2>
 				<div className="md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
 					{/* BIO */}
-					<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 px-5 lg:px-20 lg:self-center shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-3xl py-5 bg-gradient-to-br from-light/15 to-dark dark:from-dark/15 dark:to-light">
+					<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 px-5 lg:px-20 lg:self-center rounded-3xl py-5 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50  bg-gradient-to-br from-light/15 to-dark dark:from-dark/15 dark:to-light">
 						<p className="">Je m’appelle</p>
 						<h3 className="text-highlight dark:text-highdark text-3xl md:text-4xl font-bold my-2">
 							Jean-Philippe Herfeld

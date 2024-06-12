@@ -6,9 +6,7 @@ export default function Ressources() {
 			<div className="divbar"></div>
 			<h2>Ressources</h2>
 			<p className="mt-5 w-[90%] mx-auto">
-				Voici les sites ou vidéos qui m’ont aidé et m’aident à me former. Les
-				explications y sont claires et permettent de progresser plus facilement
-				sur certains concepts.
+				En plus des cours de la plateforme OpenClassrooms, voici les sites ou vidéos qui m’ont aidé et m’aident à me former. Les explications y sont claires et permettent de progresser plus facilement sur certains concepts.
 			</p>
 			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 mt-8">
 				<RsCard
@@ -17,7 +15,7 @@ export default function Ressources() {
 					RsPic="/photos/RsPic-PGcut.png"
 					RsLink="https://www.pierre-giraud.com/"
 					RsLinkYT="https://www.youtube.com/pierregiraudcom"
-					RsNote="Son cours m'a fait aimé JavaScript, mais c'est un peu trop détaillé parfois."
+					RsNote="Son cours m'a fait aimé JavaScript, même si c’est un peu trop détaillé parfois."
 				/>
 				<RsCard
 					RsName="École du web"
@@ -33,15 +31,15 @@ export default function Ressources() {
 					RsPic="/photos/RsPic-codeconceptcut.png"
 					RsLink="https://codeconcept.teachable.com/"
 					RsLinkYT="https://www.youtube.com/@codeconcept"
-					RsNote="Pour moi la meilleure vidéo sur React qui existe."
+					RsNote="Pour moi la meilleure explication de React qui existe."
 				/>
 				<RsCard
-					RsName="DrcMind"
-					RsIcon="/icons/drcmind.svg"
-					RsPic="/photos/RsPic-drcmindcut.png"
-					RsLink="https://drcmind.com/"
-					RsLinkYT="https://www.youtube.com/@DrcMind"
-					RsNote="Très bonnes vidéos sur Express, MongoDB et Next."
+					RsName="ByteGrad"
+					RsIcon="/icons/bytegrad.webp"
+					RsPic="/photos/RsPic-bytegradthumb.webp"
+					RsLink="https://bytegrad.com/"
+					RsLinkYT="https://www.youtube.com/@ByteGrad"
+					RsNote="Je n'aurais jamais pu faire ce portfolio sans ses explications sur Next 14."
 				/>
 			</div>
 		</section>

@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply flex items-center text-light dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-highdark ;
+		@apply flex items-center text-highlight dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-highdark ;
 	}
 	h3 {
 		@apply text-lg text-light dark:text-dark font-bold;
@@ -49,7 +49,7 @@ html {
 		text-wrap: balance;
 	}
 	.divbar {
-		@apply h-20 w-0.5 mb-20 bg-highlight dark:bg-highdark mx-auto;
+		@apply h-20 w-0.5 mb-20 bg-light/50 dark:bg-dark/50 mx-auto;
 	}
 }
 
