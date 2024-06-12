@@ -4,6 +4,7 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
 	return (
 		<section id="contact" className="flex flex-col items-center">
+			<div className="divbar"></div>
 			<h2>Contact</h2>
 			<p>Mes compétences vous intéressent et vous souhaitez me contacter ?</p>
 			<p className="mb-3">

@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply flex items-center text-light dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-dark rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-light ;
+		@apply flex items-center text-light dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-highdark ;
 	}
 	h3 {
 		@apply text-lg text-light dark:text-dark font-bold;
@@ -38,7 +38,6 @@
 	--color-light: 221 228 230;
 	--color-highlight: 250 176 5;
 	--color-highdark: 49 119 179;
-	--color-vanilla: 255 229 204;
 }
 
 html {
@@ -48,6 +47,9 @@ html {
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
+	}
+	.divbar {
+		@apply h-20 w-0.5 mb-20 bg-highlight dark:bg-highdark mx-auto;
 	}
 }
 

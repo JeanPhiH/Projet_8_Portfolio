@@ -5,6 +5,7 @@ import MenuItem from "./MenuItem";
 export default function Projects() {
 	return (
 		<section id="projects" className="">
+			<div className="divbar"></div>
 			<h2>Projets réalisés</h2>
 			<div className="flex gap-12 flex-col justify-center items-center ">
 				{/* PROJECTS FROM JSON FILE */}
@@ -51,7 +52,7 @@ export default function Projects() {
 							))}
 						</div>
 						<div className="lg:w-1/3"></div>
-						<article className="px-4 lg:w-3/5 ">
+						<article className="px-5 lg:w-3/5 ">
 							<h4>Mission</h4>
 							<p>{project.mission}</p>
 							<h4>Contraintes</h4>

@@ -3,6 +3,7 @@ import RsCard from "./RsCard";
 export default function Ressources() {
 	return (
 		<section className="">
+			<div className="divbar"></div>
 			<h2>Ressources</h2>
 			<p className="mt-5 w-[90%] mx-auto">
 				Voici les sites ou vidéos qui m’ont aidé et m’aident à me former. Les
