@@ -75,7 +75,7 @@ export default function About() {
 							<Link
 								href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
 								target="_blank"
-								className="text-highlight dark:text-highdark underline"
+								className="text-highlight dark:text-highdark underline z-10"
 							>
 								la dernière en date
 							</Link>{" "}
