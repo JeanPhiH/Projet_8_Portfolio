@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 export default function Technos() {
 	return (
-		<section className="max-w-none bg-[url('/photos/space.webp')] bg-fixed p-10  flex flex-col justify-center items-center md:mx-auto shadow-light/50 dark:shadow-dark/50">
+		<section id="home" className="max-w-none bg-[url('/photos/space.webp')] bg-fixed p-10  flex flex-col justify-center items-center md:mx-auto shadow-light/50 dark:shadow-dark/50">
 			<h2>Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
 				<div className="absolute animate-orbitxn">

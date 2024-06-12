@@ -40,7 +40,7 @@ export default function Navbar() {
 		<nav className={navStyle}>
 				<MenuItem
 					title="Accueil"
-					href="/"
+					href="/#home"
 					target="_self"
 					src="/icons/home.svg"
 					width={24}
@@ -94,7 +94,7 @@ export default function Navbar() {
 				alt="Menu Burger"
 				width={40}
 				height={40}
-				className="fixed right-0 top-0 z-10 bg-dark  dark:invert md:static md:hidden"
+				className="fixed right-0 top-0 z-10 bg-dark  md:static md:hidden"
 				onClick={displayBurger}
 			/>
 	</>

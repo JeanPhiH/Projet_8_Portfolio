@@ -8,17 +8,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-		colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+    extend: {
+			colors:{
 			'dark': 'rgb(var(--color-dark) / <alpha-value>)',
 			'light': 'rgb(var(--color-light) / <alpha-value>)',
       'highlight': 'rgb(var(--color-highlight) / <alpha-value>)',
 			'highdark': 'rgb(var(--color-highdark) / <alpha-value>)',
 			'vanilla': 'rgb(var(--color-vanilla) / <alpha-value>)',
-      
-    },
-    extend: {
+			},
 			keyframes: {
         wiggle: {
           '0%': { transform: 'rotate(-0.5deg)' },

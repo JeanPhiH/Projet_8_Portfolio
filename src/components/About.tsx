@@ -8,25 +8,29 @@ export default function About() {
 				<h2>Qui suis-je ?</h2>
 				<div className="md:flex flex-col lg:flex-row-reverse md:justify-between items-center">
 					{/* BIO */}
-					<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 px-5 lg:px-20 lg:self-center shadow-inner shadow-light dark:shadow-dark rounded-3xl py-5 bg-gradient-to-br from-light/15 to-dark dark:from-vanilla/50 dark:to-transparent">
+					<article className="mt-10 md:w-3/4 mx-auto lg:w-1/2 px-5 lg:px-20 lg:self-center shadow-inner shadow-light dark:shadow-dark rounded-3xl py-5 bg-gradient-to-br from-light/15 to-dark dark:from-dark/15 dark:to-light">
 						<p className="">Je m’appelle</p>
 						<h3 className="text-highlight dark:text-highdark text-3xl md:text-4xl font-bold my-2">
 							Jean-Philippe Herfeld
 						</h3>
 						<p>et je suis développeur web junior.</p>
 						<p className="mt-3">
-							J’ai étudié chez OpenClassrooms afin de réaliser une reconversion professionnelle. J’ai aimé l’importance
-							accordée à la <span>pratique</span> et à l’
+							J’ai étudié chez OpenClassrooms afin de réaliser une reconversion
+							professionnelle. J’ai aimé l’importance accordée à la{" "}
+							<span>pratique</span> et à l’
 							<span>autonomie</span>.
 						</p>
-						<p>
+						<p className="mt-3">
 							J’aime les distributions <span>Linux</span>, la logique{" "}
-							<span>React</span> et les <span>animations CSS</span>.
+							<span>React</span> et les <span>animations CSS</span>. Outre les
+							compétences qui orbitent actuellement dans l’espace, je sais
+							également utiliser les langages <span>SCSS</span>,{" "}
+							<span>Express</span> et mettre en place un <span>SEO</span> (voir
+							la section Projets).
 						</p>
 						<p>
 							Je suis curieux de tout et aime les challenges qu’offre la vie.
 						</p>
-						<p>Outre les compétences qui orbitent actuellement dans l’espace, je sais également utiliser les langages <span>SCSS</span>, <span>Express</span> et mettre en place un <span>SEO</span> (voir la section Projets).</p>
 						<p className="my-3">
 							Mon CV et ma skill map sont consultables ici:
 						</p>

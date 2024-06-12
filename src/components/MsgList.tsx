@@ -10,7 +10,7 @@ export default async function MsgList() {
 			{posts.map((post) => (
 				<div
 					key={post.id}
-					className="h-48 p-3 rounded-3xl flex gap-5  shadow-light dark:shadow-dark shadow-[0px_0px_10px_5px]"
+					className="h-48 p-3 rounded-3xl flex gap-5 shadow-light dark:shadow-dark shadow-[0px_0px_10px_5px]"
 				>
 					<div className="flex-none w-40 flex flex-col justify-between items-center py-2">
 						<div>
