@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import MenuItem from "./MenuItem";
 import Image from "next/image";
@@ -36,8 +36,8 @@ export default function Navbar() {
 	}, [navStyle]);
 
 	return (
-	<>
-		<nav className={navStyle}>
+		<>
+			<nav className={navStyle}>
 				<MenuItem
 					title="Accueil"
 					href="/#home"
@@ -94,9 +94,9 @@ export default function Navbar() {
 				alt="Menu Burger"
 				width={40}
 				height={40}
-				className="fixed right-0 top-0 z-10 bg-dark  md:static md:hidden"
+				className="fixed right-2 top-0 z-10 bg-dark  md:static md:hidden"
 				onClick={displayBurger}
 			/>
-	</>
-	)
+		</>
+	);
 }

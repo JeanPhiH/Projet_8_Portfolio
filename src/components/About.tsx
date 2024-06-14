@@ -39,7 +39,7 @@ export default function About() {
 						<div className="flex gap-3">
 							<MenuItem
 								title="CV"
-								href="/cv"
+								href="/docs/jphindev.pdf"
 								target="_blank"
 								src="/icons/cv.svg"
 								width={24}

@@ -2,7 +2,6 @@ import Post from "@/models/post";
 import MenuItem from "./MenuItem";
 
 export default async function MsgList() {
-	await new Promise((resolve) => setTimeout(resolve, 1000));
 	const posts = await Post.find().sort({ _id: -1 });
 
 	return (
@@ -14,8 +13,12 @@ export default async function MsgList() {
 				>
 					<div className="flex-none w-40 flex flex-col justify-between items-center py-2">
 						<div>
-							<h3 className="font-galindo text-highlight dark:text-highdark">{post.name}</h3>
-							<h3 className="font-galindo text-highlight dark:text-highdark">{post.lastname}</h3>
+							<h3 className="font-galindo text-highlight dark:text-highdark">
+								{post.name}
+							</h3>
+							<h3 className="font-galindo text-highlight dark:text-highdark">
+								{post.lastname}
+							</h3>
 						</div>
 						<MenuItem
 							title="LkdIn"
