@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { sendEmail } from "@/actions/sendEmail";
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormState } from "react-dom";
 import FormButton from "./FormButton";
 
 export default function ContactForm() {
@@ -12,7 +12,6 @@ export default function ContactForm() {
 		error: "",
 	};
 	const [formState, formAction] = useFormState(sendEmail, initialState);
-	const { pending } = useFormStatus();
 
 	return (
 		<>
