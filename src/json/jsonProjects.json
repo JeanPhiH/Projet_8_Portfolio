@@ -6,15 +6,21 @@
 		"technoIcons": [
 			{
 				"technoTitle": "html",
-				"technoSrc": "/icons/html5.svg"
+				"technoSrc": "/icons/html5.svg",
+				"technow": 24,
+				"technoh": 32
 			},
 			{
 				"technoTitle": "css",
-				"technoSrc": "/icons/css3.svg"
+				"technoSrc": "/icons/css3.svg",
+				"technow": 24,
+				"technoh": 32
 			},
 			{
 				"technoTitle": "javascript",
-				"technoSrc": "/icons/javascript.svg"
+				"technoSrc": "/icons/javascript.svg",
+				"technow": 24,
+				"technoh": 32
 			}
 		],
 		"linksIcons": [
@@ -36,9 +42,6 @@
 		]
 	},
 
-
-
-
 	{
 		"title": "Debug et optimisation d'un site",
 		"imgSrc": "/photos/presP5_85.webp",
@@ -46,15 +49,21 @@
 		"technoIcons": [
 			{
 				"technoTitle": "SEO",
-				"technoSrc": "/icons/seo.svg"
+				"technoSrc": "/icons/seo.svg",
+				"technow": 24,
+				"technoh": 24
 			},
 			{
 				"technoTitle": "Lighhouse",
-				"technoSrc": "/icons/lighthouse.svg"
+				"technoSrc": "/icons/lighthouse.svg",
+				"technow": 24,
+				"technoh": 24
 			},
 			{
 				"technoTitle": "WAVE",
-				"technoSrc": "/icons/WAVE.webp"
+				"technoSrc": "/icons/WAVE.webp",
+				"technow": 24,
+				"technoh": 24
 			}
 		],
 		"linksIcons": [
@@ -82,9 +91,6 @@
 		]
 	},
 
-
-
-
 	{
 		"title": "Front-end React et Sass d'un site",
 		"imgSrc": "/photos/presP6_85.webp",
@@ -92,11 +98,15 @@
 		"technoIcons": [
 			{
 				"technoTitle": "React",
-				"technoSrc": "/icons/react.svg"
+				"technoSrc": "/icons/react.svg",
+				"technow": 24,
+				"technoh": 24
 			},
 			{
 				"technoTitle": "Sass",
-				"technoSrc": "/icons/sass.svg"
+				"technoSrc": "/icons/sass.svg",
+				"technow": 24,
+				"technoh": 24
 			}
 		],
 		"linksIcons": [
@@ -124,9 +134,6 @@
 		]
 	},
 
-
-
-
 	{
 		"title": "Back-end Express et MongoDB",
 		"imgSrc": "/photos/presP7_85.webp",
@@ -134,15 +141,21 @@
 		"technoIcons": [
 			{
 				"technoTitle": "NodeJS",
-				"technoSrc": "/icons/node-js.svg"
+				"technoSrc": "/icons/node-js.svg",
+				"technow": 24,
+				"technoh": 27
 			},
 			{
 				"technoTitle": "Express JS",
-				"technoSrc": "/icons/express.svg"
+				"technoSrc": "/icons/express.svg",
+				"technow": 24,
+				"technoh": 27
 			},
 			{
 				"technoTitle": "MongoDB",
-				"technoSrc": "/icons/mongodb.svg"
+				"technoSrc": "/icons/mongodb.svg",
+				"technow": 24,
+				"technoh": 27
 			}
 		],
 		"linksIcons": [
@@ -164,4 +177,3 @@
 		]
 	}
 ]
-

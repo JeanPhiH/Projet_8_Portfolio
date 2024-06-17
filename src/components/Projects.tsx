@@ -32,8 +32,8 @@ export default function Projects() {
 									src={techno.technoSrc}
 									alt={`logo ${techno.technoTitle}`}
 									title={techno.technoTitle}
-									width={24}
-									height={24}
+									width={techno.technow}
+									height={techno.technoh}
 									className="dark:invert"
 								/>
 							))}

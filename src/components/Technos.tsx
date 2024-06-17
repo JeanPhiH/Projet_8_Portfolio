@@ -35,7 +35,7 @@ export default function Technos() {
 						src="/icons/tailwind-css.svg"
 						alt="Logo TailwindCSS"
 						width={40}
-						height={27}
+						height={24}
 					/>
 				</div>
 				<div className="absolute animate-orbityp">
