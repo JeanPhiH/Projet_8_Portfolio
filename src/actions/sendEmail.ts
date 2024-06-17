@@ -5,7 +5,7 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(
-	currentState: { message: string },
+	currentState: { msg: string; error: string },
 	formData: FormData
 ): Promise<any> {
 	const name = formData.get("name");
@@ -25,23 +25,23 @@ export async function sendEmail(
 		typeof email !== "string" ||
 		typeof message !== "string"
 	) {
-		return { message: "Remplissez correctement tous les champs" };
+		return { error: "Remplissez correctement tous les champs" };
 	}
 	if (!regexName.test(name as string)) {
 		return {
-			message:
-				"Champs de texte: lettres, accents, espaces ou tirets acceptés. Pas de chiffres !",
+			error:
+				"Nom: lettres, accents, espaces ou tirets acceptés. Pas de chiffres !",
 		};
 	}
 	if (!regexMessage.test(message as string)) {
 		return {
-			message:
-				"Champs de texte: lettres, accents, espaces, chiffres ou tirets acceptés.",
+			error:
+				"Message: lettres, accents, espaces, chiffres ou ponctuations acceptés.",
 		};
 	}
 	if (!regexMail.test(email as string)) {
 		return {
-			message: "Adresse mail non valide.",
+			error: "Adresse mail non valide.",
 		};
 	}
 
@@ -61,7 +61,7 @@ export async function sendEmail(
 		formData.set("email", "");
 		formData.set("message", "");
 		return {
-			message: "Merci pour votre message, je vous répondrais dès que possible.",
+			msg: "Merci pour votre message, je vous répondrais dès que possible.",
 		};
 	} catch (error) {
 		return error;

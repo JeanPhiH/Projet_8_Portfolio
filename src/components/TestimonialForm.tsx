@@ -6,7 +6,7 @@ import FormButton from "./FormButton";
 
 export default function TestimonialForm() {
 	const initialState = {
-		message: "",
+		msg: "",
 		error: "",
 	};
 	const [formState, formAction] = useFormState(createPost, initialState);
@@ -45,10 +45,10 @@ export default function TestimonialForm() {
 						required
 						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
+					{formState?.error && (
+						<p className="text-center bg-[#f00]">{formState.error}</p>
+					)}
 				</div>
-				{formState?.error && (
-					<p className="text-center bg-[#f00]">{formState.error}</p>
-				)}
 				<div>
 					<label htmlFor="message">Message</label>
 					<textarea
