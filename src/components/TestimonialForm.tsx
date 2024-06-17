@@ -7,6 +7,7 @@ import FormButton from "./FormButton";
 export default function TestimonialForm() {
 	const initialState = {
 		message: "",
+		error: "",
 	};
 	const [formState, formAction] = useFormState(createPost, initialState);
 
@@ -22,7 +23,7 @@ export default function TestimonialForm() {
 						id="name"
 						type="text"
 						name="name"
-						placeholder="Chuck"
+						placeholder="Jane"
 						required
 						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
@@ -31,7 +32,7 @@ export default function TestimonialForm() {
 						id="lastname"
 						type="text"
 						name="lastname"
-						placeholder="Nom"
+						placeholder="Doe"
 						required
 						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
@@ -40,17 +41,20 @@ export default function TestimonialForm() {
 						id="linkedin"
 						type="linkedin"
 						name="linkedin"
-						placeholder="https://www.linkedin.com/"
+						placeholder="https://www.linkedin.com/..."
 						required
 						className="shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
 					/>
 				</div>
+				{formState?.error && (
+					<p className="text-center bg-[#f00]">{formState.error}</p>
+				)}
 				<div>
 					<label htmlFor="message">Message</label>
 					<textarea
 						id="message"
 						name="message"
-						placeholder="Votre message"
+						placeholder="J'ai connu Jean-Philippe..."
 						maxLength={5000}
 						required
 						className="h-52 shadow-inner shadow-light dark:shadow-dark dark:bg-transparent"
@@ -58,7 +62,7 @@ export default function TestimonialForm() {
 					<FormButton />
 				</div>
 			</form>
-			{formState?.message && <p className="text-center">{formState.message}</p>}
+			{formState?.msg && <p className="text-center">{formState.msg}</p>}
 		</>
 	);
 }

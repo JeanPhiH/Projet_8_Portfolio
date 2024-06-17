@@ -5,9 +5,9 @@ import { revalidatePath } from "next/cache";
 import connectDB from "@/lib/db";
 
 export async function createPost(
-	currentState: { message: string },
+	currentState: { msg: string; error: string },
 	formData: FormData
-) {
+): Promise<any> {
 	await connectDB();
 
 	const name = formData.get("name");
@@ -21,18 +21,18 @@ export async function createPost(
 		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s.,!?'"()-]*$/;
 
 	if (!name || !lastname || !linkedin || !message) {
-		return { message: "Remplissez tous les champs" };
+		return { error: "Remplissez tous les champs" };
 	}
 	if (!regexName.test(name as string) || !regexName.test(lastname as string)) {
 		return {
-			message: "Champs de texte: lettres, accents, espaces ou tirets acceptés.",
+			error: "Champs de texte: lettres, accents, espaces ou tirets acceptés.",
 		};
 	}
 	if (!regexMessage.test(message as string)) {
-		return { message: "Le message n'est pas au bon format" };
+		return { error: "Le message n'est pas au bon format" };
 	}
 	if (!regexLinkedin.test(linkedin as string)) {
-		return { message: "Le lien LinkedIn n'est pas au bon format" };
+		return { error: "Le lien LinkedIn n'est pas au bon format" };
 	}
 
 	try {
@@ -45,11 +45,17 @@ export async function createPost(
 
 		newPost.save();
 		formData.set("name", "");
+		formData.set("lastname", "");
+		formData.set("linkedin", "");
+		formData.set("message", "");
 		revalidatePath("/testimonials");
 
-		return newPost.toString();
+		return {
+			msg: "Merci pour votre message",
+		};
+		// newPost.toString();
 	} catch (error) {
 		console.log(error);
-		return { message: "error creating testimonial" };
+		return { error: "error creating testimonial" };
 	}
 }
