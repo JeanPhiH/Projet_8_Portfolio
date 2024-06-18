@@ -24,7 +24,7 @@ export default function ContactForm() {
 					id="name"
 					type="text"
 					name="name"
-					placeholder="Chuck Norris"
+					placeholder="John Doe"
 					required
 					className="italic"
 				/>

@@ -5,7 +5,7 @@ export default async function MsgList() {
 	const posts = await Post.find().sort({ _id: -1 });
 
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
+		<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-5">
 			{posts.map((post) => (
 				<div
 					key={post.id}
@@ -13,10 +13,10 @@ export default async function MsgList() {
 				>
 					<div className="flex-none w-40 flex flex-col justify-between items-center py-2">
 						<div>
-							<h3 className="font-galindo text-highlight dark:text-highdark">
+							<h3 className="font-galindo text-center text-highlight dark:text-highdark">
 								{post.name}
 							</h3>
-							<h3 className="font-galindo text-highlight dark:text-highdark">
+							<h3 className="font-galindo text-center text-highlight dark:text-highdark">
 								{post.lastname}
 							</h3>
 						</div>

@@ -14,7 +14,7 @@ export default function TestimonialForm() {
 	return (
 		<>
 			<form
-				className="mt-5 sm:w-2/3 lg:w-1/2 p-5 mx-auto flex flex-col md:flex-row md:items-start gap-5 rounded-3xl border-8 border-double border-highlight dark:border-highdark"
+				className="mt-5 sm:w-2/3 lg:w-1/2 p-5 mx-auto flex flex-col md:flex-row md:items-start gap-5 rounded-3xl border-8 border-double border-light dark:border-dark"
 				action={formAction}
 			>
 				<div className="flex flex-col gap-2">

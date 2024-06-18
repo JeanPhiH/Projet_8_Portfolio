@@ -107,9 +107,10 @@ export default function About() {
 								height={350}
 							/>
 						</div>
-						<p className="hidden text-center lg:block italic lg:absolute top-28 right-0 lg:w-1/3">
-							Amateur de randonnées et de tourisme, j’aime explorer le monde qui
-							m’entoure.
+						<p className="hidden text-center lg:block italic lg:absolute top-24 right-0 lg:w-1/3">
+							<span>Rigoureux</span> et <span>méthodique</span>, j’aime avoir
+							des projets <span>sans bugs</span> optimisés <span>SEO</span> et
+							résultats enrichis.
 						</p>
 						<div className="framebl absolute bottom-[42px] lg:bottom-0 rounded-bl-xl overflow-hidden">
 							<Image
@@ -121,8 +122,9 @@ export default function About() {
 							/>
 						</div>
 						<p className="italic text-center mt-96 lg:mt-0 lg:absolute left-4 bottom-5 lg:w-1/2">
-							À dix ans, j’écrivais mon premier code en basic sur un Amstrad cpc
-							464 à cassette.
+							Un site doit être <span>responsive</span>, <span>dynamique</span>{" "}
+							et <span>inclusif</span> en le rendant le plus{" "}
+							<span>accessible</span> possible.
 						</p>
 					</div>
 				</div>
