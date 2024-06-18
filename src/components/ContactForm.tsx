@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { sendEmail } from "@/actions/sendEmail";
 import { useFormState } from "react-dom";
 import FormButton from "./FormButton";
@@ -12,12 +12,17 @@ export default function ContactForm() {
 		error: "",
 	};
 	const [formState, formAction] = useFormState(sendEmail, initialState);
+	const formRef = useRef<HTMLFormElement>(null);
+	if (formRef.current && formState.msg) {
+		formRef.current.reset();
+	}
 
 	return (
 		<>
 			<form
 				className="mt-5 sm:w-2/3 md:w-1/2 lg:w-1/3 p-5 mx-auto  mb-5 flex flex-col items-center gap-2 bg-gradient-to-br from-light/15 to-dark dark:from-dark/15 dark:to-light rounded-3xl shadow-inner shadow-light dark:shadow-dark/50 dark:shadow-lg"
 				action={formAction}
+				ref={formRef}
 			>
 				<label htmlFor="name">Nom complet</label>
 				<input
