@@ -51,7 +51,7 @@ export default function ContactForm() {
 				/>
 				<FormButton />
 				{formState?.msg && (
-					<p className="text-center w-72 text-highlight font-bold">
+					<p className="text-center w-72 text-highlight dark:text-highdark font-bold">
 						{formState.msg}
 					</p>
 				)}
