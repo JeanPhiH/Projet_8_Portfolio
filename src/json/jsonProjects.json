@@ -11,16 +11,16 @@
 				"technoh": 32
 			},
 			{
-				"technoTitle": "css",
+				"technoTitle": "CSS",
 				"technoSrc": "/icons/css3.svg",
-				"technow": 24,
-				"technoh": 32
+				"technow": 27,
+				"technoh": 27
 			},
 			{
-				"technoTitle": "javascript",
+				"technoTitle": "Javascript",
 				"technoSrc": "/icons/javascript.svg",
 				"technow": 24,
-				"technoh": 32
+				"technoh": 27
 			}
 		],
 		"linksIcons": [
@@ -140,13 +140,13 @@
 		"imgAlt": "Projet Back-end",
 		"technoIcons": [
 			{
-				"technoTitle": "NodeJS",
+				"technoTitle": "Node",
 				"technoSrc": "/icons/node-js.svg",
 				"technow": 24,
 				"technoh": 27
 			},
 			{
-				"technoTitle": "Express JS",
+				"technoTitle": "Express",
 				"technoSrc": "/icons/express.svg",
 				"technow": 24,
 				"technoh": 27

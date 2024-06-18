@@ -25,17 +25,22 @@ export default function Projects() {
 						<h3 className="bg-dark lg:bg-dark/75 dark:bg-transparent lg:dark:bg-light/75 text-light dark:text-dark w-[90%] mx-auto lg:w-[150px] p-3 lg:rounded-xl lg:absolute left-5 bottom-5 text-center lg:group-hover/project:left-20 lg:group-hover/project:bottom-[150px] duration-500">
 							{project.title}
 						</h3>
-						<div className="flex justify-center gap-3 w-[90%] mx-auto bg-dark lg:bg-dark/75 dark:bg-transparent lg:dark:bg-light/75 lg:w-[150px] p-3 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-20 duration-500  lg:rounded-full">
+						<div className="flex justify-center gap-3 w-[90%] mx-auto bg-dark lg:bg-dark/75 dark:bg-transparent lg:dark:bg-light/75 lg:w-[280px]  p-3 lg:pt-5 lg:absolute left-[200px] bottom-5 text-center lg:group-hover/project:left-5 duration-500  lg:rounded-full">
 							{project.technoIcons.map((techno) => (
-								<Image
+								<div
 									key={techno.technoTitle}
-									src={techno.technoSrc}
-									alt={`logo ${techno.technoTitle}`}
-									title={techno.technoTitle}
-									width={techno.technow}
-									height={techno.technoh}
-									className="dark:invert"
-								/>
+									className="flex flex-col justify-around items-center"
+								>
+									<Image
+										src={techno.technoSrc}
+										alt={`logo ${techno.technoTitle}`}
+										title={techno.technoTitle}
+										width={techno.technow}
+										height={techno.technoh}
+										className="dark:invert"
+									/>
+									<p className="">{techno.technoTitle}</p>
+								</div>
 							))}
 						</div>
 						<div className="flex flex-col justify-center items-center gap-3 bg-transparent p-1 lg:p-3 absolute right-0 top-0">
