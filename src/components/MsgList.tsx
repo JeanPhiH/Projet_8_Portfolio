@@ -9,7 +9,7 @@ export default async function MsgList() {
 			{posts.map((post) => (
 				<div
 					key={post.id}
-					className="h-48 p-3 rounded-3xl flex gap-5 shadow-light/50 dark:shadow-dark/50 shadow-[0px_0px_10px_5px]"
+					className="h-56 p-3 rounded-3xl flex gap-5 shadow-light/50 dark:shadow-dark/50 shadow-[0px_0px_10px_5px] lg:hover:scale-125 duration-500"
 				>
 					<div className="flex-none w-40 flex flex-col justify-between items-center py-2">
 						<div>
@@ -20,6 +20,7 @@ export default async function MsgList() {
 								{post.lastname}
 							</h3>
 						</div>
+						<p>le {post.postdate.toLocaleDateString("fr-FR")}</p>
 						<MenuItem
 							title="LkdIn"
 							href={post.linkedin}

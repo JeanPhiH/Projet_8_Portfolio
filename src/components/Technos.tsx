@@ -59,7 +59,7 @@ export default function Technos() {
 							"
 							/>
 						</defs>
-						<text fill="#ffe5cc">
+						<text fill="#dde4e6">
 							<textPath xlinkHref="#circle">
 								NextJS 14 __ TypeScript 5 __ TailwindCSS 3 __ MongoDB 4
 							</textPath>

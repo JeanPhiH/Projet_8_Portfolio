@@ -9,6 +9,9 @@ const postSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	postdate: {
+		type: Date,
+	},
 	linkedin: {
 		type: String,
 		required: true,

@@ -12,6 +12,7 @@ export async function createPost(
 
 	const name = formData.get("name");
 	const lastname = formData.get("lastname");
+	const postdate = new Date();
 	const linkedin = formData.get("linkedin");
 	const message = formData.get("message");
 	const regexName =
@@ -41,6 +42,7 @@ export async function createPost(
 		const newPost = new Post({
 			name,
 			lastname,
+			postdate,
 			linkedin,
 			message,
 		});
