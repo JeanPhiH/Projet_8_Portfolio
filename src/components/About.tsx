@@ -33,35 +33,7 @@ export default function About() {
 						<p>
 							Je suis curieux de tout et aime les challenges qu’offre la vie.
 						</p>
-						<p className="my-3">
-							Mon CV, ma skill map et ma page Github sont consultables ici:
-						</p>
-						<div className="flex gap-3">
-							<MenuItem
-								title="CV"
-								href="/docs/jphindev.pdf"
-								target="_blank"
-								src="/icons/cv.svg"
-								width={24}
-								height={24}
-							/>
-							<MenuItem
-								title="Skills"
-								href="https://miro.com/app/board/uXjVK-F7nmo=/?share_link_id=715896338711"
-								target="_blank"
-								src="/icons/mindmap.svg"
-								width={24}
-								height={24}
-							/>
-							<MenuItem
-								title="Github"
-								href="https://github.com/JeanPhiH"
-								target="_blank"
-								src="/icons/github.svg"
-								width={24}
-								height={24}
-							/>
-						</div>
+
 						<p className="mt-4">Ma maxime du moment: </p>
 						<blockquote className="italic">
 							&quot; C’est dans la contrainte que nait l’inspiration. &quot;
@@ -126,6 +98,38 @@ export default function About() {
 							et <span>inclusif</span> en le rendant le plus{" "}
 							<span>accessible</span> possible.
 						</p>
+					</div>
+				</div>
+				{/* LINKS */}
+				<div className="text-center mt-10 ">
+					<p className="my-3">
+						Mon CV, ma skill map et ma page Github sont consultables ici:
+					</p>
+					<div className="flex justify-center gap-3">
+						<MenuItem
+							title="CV"
+							href="/docs/jphindev.pdf"
+							target="_blank"
+							src="/icons/cv.svg"
+							width={24}
+							height={24}
+						/>
+						<MenuItem
+							title="Skills"
+							href="https://miro.com/app/board/uXjVK-F7nmo=/?share_link_id=715896338711"
+							target="_blank"
+							src="/icons/mindmap.svg"
+							width={24}
+							height={24}
+						/>
+						<MenuItem
+							title="Github"
+							href="https://github.com/JeanPhiH"
+							target="_blank"
+							src="/icons/github.svg"
+							width={24}
+							height={24}
+						/>
 					</div>
 				</div>
 			</section>

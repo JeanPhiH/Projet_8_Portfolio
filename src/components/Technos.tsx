@@ -5,13 +5,13 @@ export default function Technos() {
 	return (
 		<section
 			id="home"
-			className="max-w-none bg-[url('/photos/space.webp')] mt-0 md:mt-32 bg-fixed p-10 pt-24 flex flex-col justify-center items-center md:mx-auto"
+			className="max-w-none bg-[url('/photos/space.webp')] dark:bg-[url('/photos/sky.webp')] dark:bg-cover mt-0 md:mt-32 bg-fixed p-10 pt-24 flex flex-col justify-center items-center md:mx-auto"
 		>
 			<h2>Portfolio réalisé avec</h2>
 			<div className="relative flex justify-center items-center h-96 w-full">
 				<div className="absolute animate-orbitxn">
 					<Image
-						className="w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate dark:invert"
 						src="/icons/nextjs-stroke.svg"
 						alt="Logo NextJS"
 						width={40}
@@ -31,7 +31,7 @@ export default function Technos() {
 
 				<div className="absolute animate-orbitxp">
 					<Image
-						className="w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate dark:brightness-50"
 						src="/icons/tailwind-css.svg"
 						alt="Logo TailwindCSS"
 						width={40}
@@ -40,7 +40,7 @@ export default function Technos() {
 				</div>
 				<div className="absolute animate-orbityp">
 					<Image
-						className="w-10 animate-selfrotate"
+						className="w-10 animate-selfrotate dark:brightness-50"
 						src="/icons/mongodb-icon.svg"
 						alt="Logo MongoDB"
 						width={40}
@@ -48,7 +48,7 @@ export default function Technos() {
 					/>
 				</div>
 				<div className="absolute">
-					<svg className="rounded-full  w-[240px] h-[240px] -rotate-[40deg]">
+					<svg className="rounded-full  w-[240px] h-[240px] -rotate-[40deg] dark:invert">
 						<defs>
 							<path
 								id="circle"
