@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache";
 import connectDB from "@/lib/db";
 
 export async function createPost(
-	currentState: { msg: string; error: string },
+	currentState: { error: string },
 	formData: FormData
 ): Promise<any> {
 	await connectDB();
@@ -44,16 +44,8 @@ export async function createPost(
 		});
 
 		newPost.save();
-		formData.set("name", "");
-		formData.set("lastname", "");
-		formData.set("linkedin", "");
-		formData.set("message", "");
-		revalidatePath("/testimonials");
 
-		return {
-			msg: "Merci pour votre message",
-		};
-		// newPost.toString();
+		revalidatePath("/testimonials");
 	} catch (error) {
 		console.log(error);
 		return { error: "error creating testimonial" };
