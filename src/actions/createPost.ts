@@ -25,11 +25,13 @@ export async function createPost(
 	}
 	if (!regexName.test(name as string) || !regexName.test(lastname as string)) {
 		return {
-			error: "Champs de texte: lettres, accents, espaces ou tirets acceptés.",
+			error: "Nom: lettres, accents, espaces ou tirets acceptés.",
 		};
 	}
 	if (!regexMessage.test(message as string)) {
-		return { error: "Le message n'est pas au bon format" };
+		return {
+			error: "Le message n'est pas au bon format, < et > ne sont pas acceptés",
+		};
 	}
 	if (!regexLinkedin.test(linkedin as string)) {
 		return { error: "Le lien LinkedIn n'est pas au bon format" };
