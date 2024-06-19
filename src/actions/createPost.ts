@@ -18,7 +18,7 @@ export async function createPost(
 		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s-]+$/;
 	const regexLinkedin = /^(https?:\/\/)?(www\.)?linkedin\.com\/.*/;
 	const regexMessage =
-		/^[a-zA-ZàáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s.,!?'"()-]*$/;
+		/^[a-zA-Z0-9àáâäãåçèéêëìíîïñòóôöõùúûüýÿÀÁÂÄÃÅÇÈÉÊËÌÍÎÏÑÒÓÔÖÕÙÚÛÜø\s.,:&#!?'"’^°=+€$£@%*()\/\[\]_-]*$/;
 
 	if (!name || !lastname || !linkedin || !message) {
 		return { error: "Remplissez tous les champs" };
