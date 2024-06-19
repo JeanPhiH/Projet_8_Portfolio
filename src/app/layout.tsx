@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 		"tailwindcss",
 	],
 	creator: "Jphindev",
-	metadataBase: new URL('https://projet-8-portfolio-gamma.vercel.app/'),
+	metadataBase: new URL("https://projet-8-portfolio-gamma.vercel.app/"),
 	alternates: {
-    canonical: '/',
-  },
+		canonical: "/",
+	},
 	openGraph: {
 		title: "Jphindev’s portfolio",
 		description:
