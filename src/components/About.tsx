@@ -100,8 +100,9 @@ export default function About() {
 						</p>
 					</div>
 				</div>
+
 				{/* LINKS */}
-				<div className="text-center mt-10 ">
+				<div className="text-center mt-14 ">
 					<p className="my-3">
 						Mon CV, ma skill map et ma page Github sont consultables ici:
 					</p>

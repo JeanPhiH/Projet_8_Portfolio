@@ -18,7 +18,7 @@ export default function TestimonialForm() {
 				action={formAction}
 				// ref={formRef}
 			>
-				<div className="flex flex-col md:flex-row md:items-start gap-5">
+				<div className="flex flex-col text-center md:text-start md:flex-row md:items-start gap-5">
 					<div className="flex flex-col gap-2">
 						<label htmlFor="name">Prénom</label>
 						<input

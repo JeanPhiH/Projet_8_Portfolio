@@ -94,7 +94,7 @@ export default function Navbar() {
 				alt="Menu Burger"
 				width={40}
 				height={40}
-				className="fixed right-2 top-0 z-10 bg-dark  md:static md:hidden"
+				className="fixed right-2 top-0 z-10 bg-dark rounded-b-lg  md:static md:hidden"
 				onClick={displayBurger}
 			/>
 		</>
