@@ -9,7 +9,7 @@
 		@apply text-3xl font-galindo;
 	}
 	h2 {
-		@apply flex items-center text-highlight dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-highdark ;
+		@apply flex items-center text-highlight dark:text-light text-2xl w-fit px-10 h-24 shadow-inner shadow-light dark:shadow-lg dark:shadow-dark/50 rounded-full mx-auto mb-10 font-galindo tracking-wider dark:bg-light bg-gradient-to-br from-light/15 to-dark dark:from-dark dark:to-highdark;
 	}
 	h3 {
 		@apply text-lg text-light dark:text-dark font-bold;
@@ -32,12 +32,12 @@
 @tailwind components;
 
 @tailwind utilities;
-
+/*  */
 :root {
-	--color-dark: 10 25 47;
-	--color-light: 221 228 230;
-	--color-highlight: 250 176 5;
-	--color-highdark: 49 119 179;
+	--color-dark: 10 25 47; /* #0a192f */
+	--color-light: 221 228 230; /* #dde4e6 */
+	--color-highlight: 250 176 5; /* #fab005 */
+	--color-highdark: 49 119 179; /* #3177b3 */
 }
 
 html {

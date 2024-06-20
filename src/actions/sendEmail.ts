@@ -57,9 +57,7 @@ export async function sendEmail(
 		if (error) {
 			return error;
 		}
-		formData.set("name", "");
-		formData.set("email", "");
-		formData.set("message", "");
+
 		return {
 			msg: "Merci pour votre message, je vous répondrais dès que possible.",
 		};
