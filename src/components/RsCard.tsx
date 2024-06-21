@@ -6,14 +6,12 @@ export default function RsCard({
 	RsIcon,
 	RsPic,
 	RsLink,
-	RsLinkYT,
 	RsNote,
 }: {
 	RsName: string;
 	RsIcon: string;
 	RsPic: string;
 	RsLink: string;
-	RsLinkYT: string;
 	RsNote: string;
 }) {
 	return (
@@ -28,20 +26,12 @@ export default function RsCard({
 				height={144}
 			/>
 			<p className="text-center h-40">{RsNote}</p>
-			<div className="flex gap-3">
+			<div className="">
 				<MenuItem
 					title="Site"
 					href={RsLink}
 					target="_blank"
 					src="/icons/websitefilled.svg"
-					width={24}
-					height={24}
-				/>
-				<MenuItem
-					title="Youtube"
-					href={RsLinkYT}
-					target="_blank"
-					src="/icons/youtube.svg"
 					width={24}
 					height={24}
 				/>

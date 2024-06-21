@@ -15,7 +15,9 @@ export default function About() {
 						<h3 className="text-highlight dark:text-highdark text-3xl md:text-4xl font-bold my-2">
 							Jean-Philippe Herfeld
 						</h3>
-						<p>et je suis développeur web junior.</p>
+						<p className="text-xl md:text-2xl font-bold my-2">
+							et je suis développeur web junior.
+						</p>
 						<p className="mt-3">
 							J’ai étudié chez OpenClassrooms afin de réaliser une reconversion
 							professionnelle. J’ai aimé l’importance accordée à la{" "}
@@ -25,6 +27,11 @@ export default function About() {
 						<p className="mt-3">
 							J’aime les distributions <span>Linux</span>, la logique{" "}
 							<span>React</span> et les <span>animations CSS</span>.
+						</p>
+						<p className="my-3">
+							Outre les compétences présentées au-dessus, je sais également
+							utiliser les langages <span>SCSS</span>, <span>Express</span> et
+							mettre en place un <span>SEO</span>.
 						</p>
 						<p>
 							Je suis curieux de tout et aime les challenges qu’offre la vie.
@@ -38,14 +45,19 @@ export default function About() {
 
 					{/* PHOTOS */}
 					<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
-						<p className="italic text-center lg:absolute left-4 top-5 lg:w-1/2">
-							Je sais également utiliser les langages <span>SCSS</span>,{" "}
-							<span>Express</span> et mettre en place un <span>SEO</span>.
+						<p className="hidden lg:block italic text-center lg:absolute left-4 top-5 lg:w-1/2">
+							J’écris, anime et enregistre des sessions <span>JDR</span>, la
+							dernière se déroule dans l’univers des <span>backrooms</span>.
+						</p>
+						<p className="lg:hidden text-center block italic mb-3">
+							<span>Rigoureux</span> et <span>méthodique</span>, j’aime avoir
+							des projets <span>sans bugs</span> optimisés <span>SEO</span> et
+							résultats enrichis.
 						</p>
 						<div className="frametl absolute rounded-tl-xl overflow-hidden">
 							<Image
-								className="object-cover h-full"
-								src="/photos/othertechnos2.webp"
+								className="object-cover h-full scale-110"
+								src="/photos/jdrblur.webp"
 								alt="Autres technos"
 								width={400}
 								height={182}
@@ -83,7 +95,7 @@ export default function About() {
 				</div>
 
 				{/* LINKS */}
-				<div className="text-center mt-14 ">
+				<div className="text-center mt-20 lg:mt-14">
 					<p className="my-3">
 						Mon CV, ma skill map et ma page Github sont consultables ici:
 					</p>
