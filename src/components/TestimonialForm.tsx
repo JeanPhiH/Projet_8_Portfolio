@@ -3,7 +3,6 @@
 import { createPost } from "@/actions/createPost";
 import { useFormState } from "react-dom";
 import FormButton from "./FormButton";
-import { useRef } from "react";
 
 export default function TestimonialForm() {
 	const initialState = {
@@ -16,7 +15,6 @@ export default function TestimonialForm() {
 			<form
 				className="mt-5 sm:w-2/3 lg:w-1/2 p-5 mx-auto rounded-3xl border-8 border-double border-light dark:border-dark"
 				action={formAction}
-				// ref={formRef}
 			>
 				<div className="flex flex-col text-center md:text-start md:flex-row md:items-start gap-5">
 					<div className="flex flex-col gap-2">

@@ -9,7 +9,7 @@ export default async function MsgList() {
 			{posts.map((post) => (
 				<div
 					key={post.id}
-					className="lg:h-72 p-3 rounded-3xl md:w-2/3 lg:w-full md:mx-auto flex flex-col justify-center items-center lg:flex-row gap-5 shadow-light/50 dark:shadow-dark/50 shadow-[0px_0px_10px_5px] lg:hover:scale-125 duration-500 bg-dark dark:bg-light"
+					className="lg:h-72 p-3 rounded-3xl md:w-2/3 lg:w-full md:mx-auto flex flex-col justify-center items-center lg:flex-row gap-5 shadow-light/50 dark:shadow-dark/50 shadow-[0px_0px_10px_5px] lg:hover:scale-110 duration-500 bg-dark dark:bg-light"
 				>
 					<div className="lg:flex-none w-40 flex flex-col gap-5 items-center py-2">
 						<div>

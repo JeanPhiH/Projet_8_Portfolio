@@ -24,11 +24,7 @@ export default function About() {
 						</p>
 						<p className="mt-3">
 							J’aime les distributions <span>Linux</span>, la logique{" "}
-							<span>React</span> et les <span>animations CSS</span>. Outre les
-							compétences qui orbitent actuellement dans l’espace, je sais
-							également utiliser les langages <span>SCSS</span>,{" "}
-							<span>Express</span> et mettre en place un <span>SEO</span> (voir
-							la section Projets).
+							<span>React</span> et les <span>animations CSS</span>.
 						</p>
 						<p>
 							Je suis curieux de tout et aime les challenges qu’offre la vie.
@@ -43,32 +39,17 @@ export default function About() {
 					{/* PHOTOS */}
 					<div className="w-[300px] h-[500px] mx-auto relative mt-10 lg:w-[400px] lg:h-[375px] lg:animate-wiggle lg:hover:animate-none">
 						<p className="italic text-center lg:absolute left-4 top-5 lg:w-1/2">
-							J’écris, anime et enregistre des sessions JDR, notamment dans
-							l’univers des{" "}
-							<span>
-								<Link
-									href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
-									target="_blank"
-									className="underline"
-								>
-									backrooms
-								</Link>
-							</span>
-							.
+							Je sais également utiliser les langages <span>SCSS</span>,{" "}
+							<span>Express</span> et mettre en place un <span>SEO</span>.
 						</p>
 						<div className="frametl absolute rounded-tl-xl overflow-hidden">
-							<Link
-								href="https://podcasters.spotify.com/pod/show/roxorduponey/episodes/Perdus-dans-les-backrooms-12-JdR-e2032am"
-								target="_blank"
-							>
-								<Image
-									className="object-cover h-full"
-									src="/photos/jdrcut3.webp"
-									alt="Landscape"
-									width={400}
-									height={182}
-								/>
-							</Link>
+							<Image
+								className="object-cover h-full"
+								src="/photos/othertechnos2.webp"
+								alt="Autres technos"
+								width={400}
+								height={182}
+							/>
 						</div>
 						<div className="framer absolute top-[96px] lg:top-3 right-0 ">
 							<Image
