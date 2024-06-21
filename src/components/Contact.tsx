@@ -6,10 +6,15 @@ export default function Contact() {
 		<section id="contact" className="flex flex-col items-center">
 			<div className="divbar"></div>
 			<h2>Contact</h2>
-			<p>Mes compétences vous intéressent et vous souhaitez me contacter ?</p>
+			<p className="text-center">
+				Mes compétences vous intéressent et vous souhaitez me contacter ?
+			</p>
+			<p className="text-center mb-5">
+				Vous pouvez le faire avec le formulaire ci-dessous, via ma page LinkedIn
+				ou tout simplement par mail.
+			</p>
 			<p className="mb-3">
-				Vous pouvez le faire avec le formulaire ci-dessous, ou via ma page
-				LinkedIn.
+				<span>jp.herfeld@gmail.com</span>
 			</p>
 			<MenuItem
 				title="LinkedIn"
