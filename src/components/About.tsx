@@ -58,12 +58,12 @@ export default function About() {
 							<Image
 								className="object-cover h-full scale-110"
 								src="/photos/jdrblur.webp"
-								alt="Autres technos"
+								alt="une partie de jdr"
 								width={400}
 								height={182}
 							/>
 						</div>
-						<div className="framer absolute top-[96px] lg:top-3 right-0 ">
+						<div className="framer absolute top-[107px] lg:top-3 right-0 ">
 							<Image
 								className="object-cover h-full"
 								src="/photos/moicut5.webp"
@@ -77,11 +77,11 @@ export default function About() {
 							des projets <span>sans bugs</span> optimisés <span>SEO</span> et
 							résultats enrichis.
 						</p>
-						<div className="framebl absolute bottom-[42px] lg:bottom-0 rounded-bl-xl overflow-hidden">
+						<div className="framebl absolute bottom-[32px] lg:bottom-0 rounded-bl-xl overflow-hidden">
 							<Image
 								className="object-cover h-full"
 								src="/photos/gazoncut3.webp"
-								alt="RPG session"
+								alt="moi assis dans l'herbe avec un ordinateur"
 								width={400}
 								height={182}
 							/>
