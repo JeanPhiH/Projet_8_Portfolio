@@ -1,10 +1,11 @@
-import Image from "next/image";
+import LogoJP from "@/components/LogoJP";
 
 export default function Loading() {
 	return (
 		<div className="h-screen w-screen flex items-center justify-center">
-			<Image src="/icons/logoJP.webp" alt="chargement" width={50} height={50} className="animate-madspin" />
+			<div className="animate-madspin">
+				<LogoJP />
+			</div>
 		</div>
-
 	);
 }
