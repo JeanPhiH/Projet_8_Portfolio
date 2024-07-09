@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 export const metadata: Metadata = {
 	title: "Jphindev’s Portfolio",
 	description:
-		"Portfolio de Jphindev aka Jean-Philippe Herfeld, dévelopeur web NextJS, React, Typescript et TailwindCSS",
+		"Portfolio de Jphindev aka Jean-Philippe Herfeld, dévelopeur web Next, React, Typescript et TailwindCSS",
 	keywords: [
 		"portfolio",
 		"jphindev",
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 		"tailwindcss",
 	],
 	creator: "Jphindev",
-	metadataBase: new URL("https://projet-8-portfolio-gamma.vercel.app/"),
+	metadataBase: new URL("https://jphindev.vercel.app/"),
 	alternates: {
 		canonical: "/",
 	},
 	openGraph: {
 		title: "Jphindev’s portfolio",
 		description:
-			"Portfolio de Jphindev aka Jean-Philippe Herfeld, dévelopeur web NextJS, React, Typescript et TailwindCSS",
-		url: "https://projet-8-portfolio-gamma.vercel.app/", // here full URL needed.
+			"Portfolio de Jphindev aka Jean-Philippe Herfeld, dévelopeur web Next, React, Typescript et TailwindCSS",
+		url: "https://jphindev.vercel.app/",
 		type: "website",
 		siteName: "Jphindev’s portfolio",
 		images: [
